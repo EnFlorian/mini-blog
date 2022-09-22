@@ -1,6 +1,6 @@
-import { Post } from "../../types/post";
+import { IPost } from "../../types/post";
 import { posts } from "./data";
 
-export const fetchPosts = (): Post[] => {
+export const fetchPosts = (): IPost[] => {
   return posts;
 };

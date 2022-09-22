@@ -1,12 +1,12 @@
-import { Author } from "./author";
+import { IAuthor } from "./author";
 
-export interface Post {
+export interface IPost {
   id: string;
   title: string;
   excerpt: string;
   content: string;
-  tags: string[];
-  author: Author;
+  categories: string[];
+  author: IAuthor;
   coverImage: {
     src: string;
     alt: string;

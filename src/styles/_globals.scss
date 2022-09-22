@@ -1,0 +1,61 @@
+:root {
+  --navbar-height: 100px;
+  --footer-height: 10rem;
+
+  --box-shadow-1: 4px 3px 9px 0px rgb(0 0 0 / 10%);
+  --box-shadow-2: 12px 9px 38px 0px rgb(0 0 0 / 10%);
+
+  --transition-slow: all 0.3s ease-in-out;
+  --transition-base: all 0.2s ease-in-out;
+  --transition-fast: all 0.1s ease-in-out;
+
+  --clr-overlay-1: hsla(0, 0%, 100%, 0.9);
+  --clr-overlay-2: hsla(0, 0%, 100%, 0.1);
+
+  --clr-bg-0: #ffffff;
+  --clr-bg-1: #ffffff;
+  --clr-bg-2: #564741;
+
+  --clr-text-0: #ffffff;
+  --clr-text-1: #564741;
+  --clr-text-2: #646464;
+
+  --clr-accent-1: #f69946;
+  --clr-accent-2: hsl(39, 56%, 92%);
+}
+
+.container-xl {
+  margin: 0 auto;
+  width: 1400px;
+}
+
+.container-lg {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.container-md {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+@media (max-width: 1400px) {
+  .container-xl {
+    margin: 1rem;
+    width: calc(100% - 2rem);
+  }
+}
+
+@media (max-width: 1200px) {
+  .container-lg {
+    margin: 1rem;
+    width: calc(100% - 2rem);
+  }
+}
+
+@media (max-width: 1000px) {
+  .container-md {
+    margin: 1rem;
+    width: calc(100% - 2rem);
+  }
+}

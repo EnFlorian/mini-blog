@@ -7,7 +7,7 @@ export const posts = [
     excerpt: "React Query is a library that helps you fetch, cache and update data in your React applications.",
     content:
       "React Query is a library that helps you fetch, cache and update data in your React applications. It will automatically keep your UI in sync with the latest data and reduce the amount of boilerplate in your application.",
-    tags: ["Technology"],
+    categories: ["Technology"],
     author: {
       name: "John Doe",
       image: authorImage,

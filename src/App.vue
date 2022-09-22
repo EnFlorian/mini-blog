@@ -1,11 +1,14 @@
 <template>
-  <TheNavbar />
-  <div class="container is-max-desktop px-4 py-4">
-    <RouterView />
+  <div class="bg-slate-800">
+    <TheNavbarVue />
+    <div class="">
+      <RouterView />
+    </div>
+    <TheFooterVue />
   </div>
 </template>
 
 <script setup lang="ts">
 import { RouterView } from "vue-router";
-import TheNavbar from "./components/TheNavbar.vue";
+import { TheNavbarVue, TheFooterVue } from "./components";
 </script>

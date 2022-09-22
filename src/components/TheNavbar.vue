@@ -1,32 +1,60 @@
 <template>
-  <section class="bg-red-500 h-16 flex items-center sticky top-0 w-full">
-    <div class="w-full m-auto max-w-6xl flex justify-between items-center text-white">
-      <!-- Logo -->
-      <h1 class="text-5xl font-semibold">Mini Blog</h1>
-      <!-- Links -->
-      <ul class="gap-2 hidden md:flex">
+  <section class="navbar">
+    <div class="navbar__wrapper container-xl">
+      <h1>Mini Blog</h1>
+      <ul class="navbar__links">
         <li v-for="(link, index) in links" :key="index">
-          <a class="text-xl" :href="link.path">{{ link.name }}</a>
+          <a class="navbar__link" :href="link.path">{{ link.name }}</a>
         </li>
       </ul>
-      <!-- Mobile Menu Button -->
-      <button class="md:hidden">
-        <svg
-          class="w-8 h-8 text-white"
-          fill="none"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path d="M4 6h16M4 12h16M4 18h16"></path>
-        </svg>
-      </button>
+      <button class="navbar__mobile-menu-button"><fa :icon="['fas', 'bars']" /></button>
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
 import { links } from "../mock-api/navigation/data";
+
+// add hover effect to navbar when scrolled down
+const hideScrollIndicator = () => {
+  const scrollIndicator = document.querySelector(".navbar");
+  if (document.documentElement.scrollTop > 20) {
+    scrollIndicator?.classList.add("navbar--scrolled");
+  } else {
+    scrollIndicator?.classList.remove("navbar--scrolled");
+  }
+};
+
+window.onscroll = hideScrollIndicator;
 </script>
+
+<style scoped lang="scss">
+.navbar {
+  background-color: var(--clr-bg-1);
+  position: sticky;
+  top: 0;
+  transition: var(--transition-base);
+
+  &--scrolled {
+    background-color: var(--clr-bg-2);
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--clr-text-1);
+    height: var(--navbar-height);
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  &__mobile-menu-button {
+    display: none;
+  }
+}
+</style>

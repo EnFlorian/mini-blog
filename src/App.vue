@@ -1,9 +1,9 @@
 <template>
-  <div class="bg-slate-800">
+  <div class="app">
     <TheNavbarVue />
-    <div class="">
+    <main class="content">
       <RouterView />
-    </div>
+    </main>
     <TheFooterVue />
   </div>
 </template>
@@ -12,3 +12,12 @@
 import { RouterView } from "vue-router";
 import { TheNavbarVue, TheFooterVue } from "./components";
 </script>
+
+<style scoped lang="scss">
+.app {
+  background-color: var(--clr-bg-1);
+}
+.content {
+  min-height: calc(100vh - var(--navbar-height));
+}
+</style>

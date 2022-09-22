@@ -1,5 +1,5 @@
 :root {
-  --navbar-height: 100px;
+  --navbar-height: 80px;
   --footer-height: 10rem;
 
   --box-shadow-1: 4px 3px 9px 0px rgb(0 0 0 / 10%);
@@ -12,16 +12,15 @@
   --clr-overlay-1: hsla(0, 0%, 100%, 0.9);
   --clr-overlay-2: hsla(0, 0%, 100%, 0.1);
 
-  --clr-bg-0: #ffffff;
-  --clr-bg-1: #ffffff;
-  --clr-bg-2: #564741;
+  --clr-bg-0: hsl(220, 26%, 10%);
+  --clr-bg-1: hsl(220, 26%, 14%);
+  --clr-bg-2: hsl(218, 23%, 23%);
 
   --clr-text-0: #ffffff;
-  --clr-text-1: #564741;
-  --clr-text-2: #646464;
+  --clr-text-1: hsl(214, 32%, 95%);
+  --clr-text-2: hsl(210, 20%, 80%);
 
   --clr-accent-1: #f69946;
-  --clr-accent-2: hsl(39, 56%, 92%);
 }
 
 .container-xl {

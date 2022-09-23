@@ -3,6 +3,7 @@ import authorImage from "../../assets/images/person.jpg";
 export const posts = [
   {
     id: "0",
+    featured: true,
     title: "How to use React Query",
     excerpt: "React Query is a library that helps you fetch, cache and update data in your React applications.",
     content:
@@ -21,6 +22,7 @@ export const posts = [
   },
   {
     id: "1",
+    featured: false,
     title: "Is the bigger screen on the new nintendo switch worth it?",
     excerpt:
       "The Nintendo Switch is a great console, but it's not without its flaws. One of the biggest is the screen size.",
@@ -40,6 +42,7 @@ export const posts = [
   },
   {
     id: "2",
+    featured: false,
     title: "What does the future of electric mobiles look like?",
     excerpt: "The future of electric mobiles is bright, but it's not without its challenges.",
     content:
@@ -58,6 +61,7 @@ export const posts = [
   },
   {
     id: "3",
+    featured: false,
     title: "How version control is properly done in a team?",
     excerpt: "Version control is a great tool for teams, but it's not without its challenges.",
     content:
@@ -76,6 +80,7 @@ export const posts = [
   },
   {
     id: "4",
+    featured: true,
     title: "How many monitors are too many monitors?",
     excerpt: "The number of monitors you need depends on what you're doing.",
     content:
@@ -94,6 +99,7 @@ export const posts = [
   },
   {
     id: "5",
+    featured: false,
     title: "How gaming has changed over the last 10 years",
     excerpt: "Gaming has changed a lot over the last 10 years, and it's not without its challenges.",
     content:
@@ -112,6 +118,7 @@ export const posts = [
   },
   {
     id: "6",
+    featured: false,
     title: "What makes processor architecture different from GPU?",
     excerpt: "React Query is a library that helps you fetch, cache and update data in your React applications.",
     content:
@@ -130,6 +137,7 @@ export const posts = [
   },
   {
     id: "7",
+    featured: false,
     title: "How robots will change our daily lives in the future",
     excerpt: "React Query is a library that helps you fetch, cache and update data in your React applications.",
     content:
@@ -148,6 +156,7 @@ export const posts = [
   },
   {
     id: "8",
+    featured: true,
     title: "How long will it take us to replace conventioanl cars with electric ones?",
     excerpt: "React Query is a library that helps you fetch, cache and update data in your React applications.",
     content:
@@ -166,6 +175,7 @@ export const posts = [
   },
   {
     id: "9",
+    featured: false,
     title: "How can you jailbreak your nintendo switch?",
     excerpt: "React Query is a library that helps you fetch, cache and update data in your React applications.",
     content:
@@ -184,6 +194,7 @@ export const posts = [
   },
   {
     id: "10",
+    featured: false,
     title: "Should you use a GPU or CPU for your machine learning?",
     excerpt: "React Query is a library that helps you fetch, cache and update data in your React applications.",
     content:
@@ -202,6 +213,7 @@ export const posts = [
   },
   {
     id: "11",
+    featured: false,
     title: "What are robots already capable of?",
     excerpt: "React Query is a library that helps you fetch, cache and update data in your React applications.",
     content:
@@ -220,6 +232,7 @@ export const posts = [
   },
   {
     id: "12",
+    featured: false,
     title: "Does using dark modes really reduce the strain on our eyes?",
     excerpt: "React Query is a library that helps you fetch, cache and update data in your React applications.",
     content:

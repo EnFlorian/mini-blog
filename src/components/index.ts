@@ -1,4 +1,4 @@
-import CategoryContainerVue from "./CategoryContainer.vue";
+import PostsContainerVue from "./PostsContainer.vue";
 import PostCardVue from "./PostCard.vue";
 import TheDarkModeSwitchVue from "./TheDarkModeSwitch.vue";
 import TheFooterVue from "./TheFooter.vue";
@@ -8,7 +8,7 @@ import TheNewsletterSectionVue from "./TheNewsletterSection.vue";
 import ThePostsSectionVue from "./ThePostsSection.vue";
 
 export {
-  CategoryContainerVue,
+  PostsContainerVue,
   PostCardVue,
   TheDarkModeSwitchVue,
   TheFooterVue,

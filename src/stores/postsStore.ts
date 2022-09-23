@@ -1,37 +1,25 @@
 import { defineStore } from "pinia";
+import { fetchPosts } from "../mock-api/posts/api";
 
-export const useNotesStore = defineStore({
-  id: "notesStore",
+const posts = fetchPosts();
+
+export const usePostsStore = defineStore({
+  id: "postsStore",
   state: () => ({
-    notes: [
-      {
-        id: 1,
-        text: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
-      },
-      {
-        id: 2,
-        text: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
-      },
-    ],
+    posts,
   }),
-  getters: {},
   actions: {
-    addNote(text: string) {
-      this.notes.push({
-        id: Math.random(),
-        text,
-      });
+    getPosts() {
+      return this.posts;
     },
-
-    removeNoteById(id: number) {
-      this.notes = this.notes.filter((note) => note.id !== id);
+    getPostById(id: string) {
+      return this.posts.find((post) => post.id === id);
     },
-
-    updateNoteById(id: number, text: string) {
-      const note = this.notes.find((note) => note.id === id);
-      if (note) {
-        note.text = text;
-      }
+    getPostsByCategory(category: string) {
+      return this.posts.filter((post) => post.category === category);
+    },
+    getLatestPosts() {
+      return this.posts.slice(0, 3);
     },
   },
 });

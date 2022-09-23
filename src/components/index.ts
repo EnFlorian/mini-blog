@@ -1,17 +1,19 @@
-import TheNewsletterSectionVue from "./TheNewsletterSection.vue";
-import PostCardVue from "./PostCard.vue";
-import TheHeroSectionVue from "./TheHeroSection.vue";
-import TheFooterVue from "./TheFooter.vue";
-import ThePostsSectionVue from "./ThePostsSection.vue";
 import CategoryContainerVue from "./CategoryContainer.vue";
+import PostCardVue from "./PostCard.vue";
+import TheDarkModeSwitchVue from "./TheDarkModeSwitch.vue";
+import TheFooterVue from "./TheFooter.vue";
+import TheHeroSectionVue from "./TheHeroSection.vue";
 import TheNavbarVue from "./TheNavbar.vue";
+import TheNewsletterSectionVue from "./TheNewsletterSection.vue";
+import ThePostsSectionVue from "./ThePostsSection.vue";
 
 export {
-  TheNewsletterSectionVue,
-  PostCardVue,
-  TheHeroSectionVue,
-  TheFooterVue,
-  ThePostsSectionVue,
   CategoryContainerVue,
+  PostCardVue,
+  TheDarkModeSwitchVue,
+  TheFooterVue,
+  TheHeroSectionVue,
   TheNavbarVue,
+  TheNewsletterSectionVue,
+  ThePostsSectionVue,
 };

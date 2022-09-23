@@ -1,6 +1,6 @@
 <template>
   <section class="navbar">
-    <div class="navbar__wrapper container-xl">
+    <div class="navbar__wrapper container-lg">
       <h1>Mini Blog</h1>
       <ul class="navbar__links">
         <li v-for="(link, index) in links" :key="index">

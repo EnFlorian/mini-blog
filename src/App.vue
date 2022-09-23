@@ -1,7 +1,7 @@
 <template>
   <div class="app">
     <TheNavbarVue />
-    <main class="content">
+    <main class="app__main-content container-lg">
       <RouterView />
     </main>
     <TheFooterVue />
@@ -16,8 +16,9 @@ import { TheNavbarVue, TheFooterVue } from "./components";
 <style scoped lang="scss">
 .app {
   background-color: var(--clr-bg-1);
-}
-.content {
-  min-height: calc(100vh - var(--navbar-height));
+
+  &__main-content {
+    min-height: calc(100vh - var(--navbar-height));
+  }
 }
 </style>

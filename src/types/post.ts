@@ -5,7 +5,7 @@ export interface IPost {
   title: string;
   excerpt: string;
   content: string;
-  categories: string[];
+  category: string;
   author: IAuthor;
   coverImage: {
     src: string;

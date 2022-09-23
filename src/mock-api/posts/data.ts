@@ -1,4 +1,4 @@
-import authorImage from "assets/images/person.jpg";
+import authorImage from "../../assets/images/person.jpg";
 
 export const posts = [
   {
@@ -7,7 +7,7 @@ export const posts = [
     excerpt: "React Query is a library that helps you fetch, cache and update data in your React applications.",
     content:
       "React Query is a library that helps you fetch, cache and update data in your React applications. It will automatically keep your UI in sync with the latest data and reduce the amount of boilerplate in your application.",
-    tags: ["Programming"],
+    category: "Programming",
     author: {
       name: "Akira Bauer",
       image: authorImage,
@@ -26,7 +26,7 @@ export const posts = [
       "The Nintendo Switch is a great console, but it's not without its flaws. One of the biggest is the screen size.",
     content:
       "The Nintendo Switch is a great console, but it's not without its flaws. One of the biggest is the screen size. It's not as big as the one on the Wii U, and it's not as big as the one on the 3DS. The Switch's screen is also smaller than the one on the PS Vita, which is a shame because the Vita is a great handheld console. The Switch's screen is also smaller than the one on the PS Vita, which is a shame because the Vita is a great handheld console.",
-    tags: ["Gaming"],
+    category: "Gaming",
     author: {
       name: "Akira Bauer",
       image: authorImage,
@@ -44,7 +44,7 @@ export const posts = [
     excerpt: "The future of electric mobiles is bright, but it's not without its challenges.",
     content:
       "React Query is a library that helps you fetch, cache and update data in your React applications. It will automatically keep your UI in sync with the latest data and reduce the amount of boilerplate in your application.",
-    tags: ["Technology"],
+    category: "Technology",
     author: {
       name: "Akira Bauer",
       image: authorImage,
@@ -62,7 +62,7 @@ export const posts = [
     excerpt: "Version control is a great tool for teams, but it's not without its challenges.",
     content:
       "React Query is a library that helps you fetch, cache and update data in your React applications. It will automatically keep your UI in sync with the latest data and reduce the amount of boilerplate in your application.",
-    tags: ["Programming"],
+    category: "Programming",
     author: {
       name: "Akira Bauer",
       image: authorImage,
@@ -80,7 +80,7 @@ export const posts = [
     excerpt: "The number of monitors you need depends on what you're doing.",
     content:
       "React Query is a library that helps you fetch, cache and update data in your React applications. It will automatically keep your UI in sync with the latest data and reduce the amount of boilerplate in your application.",
-    tags: ["Technology"],
+    category: "Technology",
     author: {
       name: "Akira Bauer",
       image: authorImage,
@@ -98,7 +98,7 @@ export const posts = [
     excerpt: "Gaming has changed a lot over the last 10 years, and it's not without its challenges.",
     content:
       "React Query is a library that helps you fetch, cache and update data in your React applications. It will automatically keep your UI in sync with the latest data and reduce the amount of boilerplate in your application.",
-    tags: ["Gaming"],
+    category: "Gaming",
     author: {
       name: "Akira Bauer",
       image: authorImage,
@@ -116,7 +116,7 @@ export const posts = [
     excerpt: "React Query is a library that helps you fetch, cache and update data in your React applications.",
     content:
       "React Query is a library that helps you fetch, cache and update data in your React applications. It will automatically keep your UI in sync with the latest data and reduce the amount of boilerplate in your application.",
-    tags: ["Technology"],
+    category: "Technology",
     author: {
       name: "Akira Bauer",
       image: authorImage,
@@ -134,7 +134,7 @@ export const posts = [
     excerpt: "React Query is a library that helps you fetch, cache and update data in your React applications.",
     content:
       "React Query is a library that helps you fetch, cache and update data in your React applications. It will automatically keep your UI in sync with the latest data and reduce the amount of boilerplate in your application.",
-    tags: ["Technology"],
+    category: "Technology",
     author: {
       name: "Akira Bauer",
       image: authorImage,
@@ -152,7 +152,7 @@ export const posts = [
     excerpt: "React Query is a library that helps you fetch, cache and update data in your React applications.",
     content:
       "React Query is a library that helps you fetch, cache and update data in your React applications. It will automatically keep your UI in sync with the latest data and reduce the amount of boilerplate in your application.",
-    tags: ["Technology"],
+    category: "Technology",
     author: {
       name: "Akira Bauer",
       image: authorImage,
@@ -170,7 +170,7 @@ export const posts = [
     excerpt: "React Query is a library that helps you fetch, cache and update data in your React applications.",
     content:
       "React Query is a library that helps you fetch, cache and update data in your React applications. It will automatically keep your UI in sync with the latest data and reduce the amount of boilerplate in your application.",
-    tags: ["Gaming"],
+    category: "Gaming",
     author: {
       name: "Akira Bauer",
       image: authorImage,
@@ -188,7 +188,7 @@ export const posts = [
     excerpt: "React Query is a library that helps you fetch, cache and update data in your React applications.",
     content:
       "React Query is a library that helps you fetch, cache and update data in your React applications. It will automatically keep your UI in sync with the latest data and reduce the amount of boilerplate in your application.",
-    tags: ["Programming"],
+    category: "Programming",
     author: {
       name: "Akira Bauer",
       image: authorImage,
@@ -206,7 +206,7 @@ export const posts = [
     excerpt: "React Query is a library that helps you fetch, cache and update data in your React applications.",
     content:
       "React Query is a library that helps you fetch, cache and update data in your React applications. It will automatically keep your UI in sync with the latest data and reduce the amount of boilerplate in your application.",
-    tags: ["Technology"],
+    category: "Technology",
     author: {
       name: "Akira Bauer",
       image: authorImage,
@@ -224,7 +224,7 @@ export const posts = [
     excerpt: "React Query is a library that helps you fetch, cache and update data in your React applications.",
     content:
       "React Query is a library that helps you fetch, cache and update data in your React applications. It will automatically keep your UI in sync with the latest data and reduce the amount of boilerplate in your application.",
-    tags: ["Programming"],
+    category: "Programming",
     author: {
       name: "Akira Bauer",
       image: authorImage,

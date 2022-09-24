@@ -8,7 +8,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
-const isDarkMode = ref(false);
+const isDarkMode = ref(true);
 
 const toggleDarkMode = () => {
   if (isDarkMode.value) {

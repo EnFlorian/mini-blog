@@ -2,11 +2,11 @@
   <section class="navbar">
     <div class="navbar__wrapper container-lg">
       <router-link to="/">
-        <h1>Mini Blog</h1>
+        <h1 class="navbar__logo">Mini Blog</h1>
       </router-link>
       <ul class="navbar__links">
         <li v-for="(link, index) in links" :key="index">
-          <a class="navbar__link" :href="link.path">{{ link.name }}</a>
+          <router-link class="navbar__link" :to="link.path">{{ link.name }}</router-link>
         </li>
         <li>
           <TheDarkModeSwitchVue />
@@ -21,7 +21,6 @@
 import { links } from "../mock-api/navigation/data";
 import TheDarkModeSwitchVue from "./TheDarkModeSwitch.vue";
 
-// add hover effect to navbar when scrolled down
 const hideScrollIndicator = () => {
   const scrollIndicator = document.querySelector(".navbar");
   if (document.documentElement.scrollTop > 20) {
@@ -46,17 +45,34 @@ window.onscroll = hideScrollIndicator;
   }
 
   &__wrapper {
-    display: flex;
     align-items: center;
-    justify-content: space-between;
     color: var(--clr-text-1);
+    display: flex;
     height: var(--navbar-height);
+    justify-content: space-between;
+  }
+
+  &__logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--clr-text-0);
   }
 
   &__links {
     display: flex;
     align-items: center;
     gap: 1.5rem;
+  }
+
+  &__link {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--clr-text-1);
+    transition: var(--transition-base);
+
+    &:hover {
+      color: var(--clr-accent-1);
+    }
   }
 
   &__mobile-menu-button {

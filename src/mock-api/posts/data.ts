@@ -1,11 +1,11 @@
 import authorImage from "../../assets/images/person.jpg";
-import postImage from "../../assets/images/posts/1.jpg";
-import postImage1 from "../../assets/images/posts/2.jpg";
-import postImage2 from "../../assets/images/posts/3.jpg";
-import postImage3 from "../../assets/images/posts/4.jpg";
-import postImage4 from "../../assets/images/posts/5.jpg";
-import postImage5 from "../../assets/images/posts/6.jpg";
-import postImage6 from "../../assets/images/posts/7.jpg";
+import postImage1 from "../../assets/images/posts/1.jpg";
+import postImage2 from "../../assets/images/posts/2.jpg";
+import postImage3 from "../../assets/images/posts/3.jpg";
+import postImage4 from "../../assets/images/posts/4.jpg";
+import postImage5 from "../../assets/images/posts/5.jpg";
+import postImage6 from "../../assets/images/posts/6.jpg";
+import postImage7 from "../../assets/images/posts/7.jpg";
 
 export const posts = [
   {
@@ -23,7 +23,7 @@ export const posts = [
     date: "2020 01, 2021",
     read: 5,
     coverImage: {
-      src: "../../assets/images/posts/7.jpg",
+      src: postImage7,
       alt: "Computer Screen",
     },
   },
@@ -43,7 +43,7 @@ export const posts = [
     date: "2020 01, 2021",
     read: 5,
     coverImage: {
-      src: postImage,
+      src: postImage1,
       alt: "Computer Screen",
     },
   },
@@ -62,7 +62,7 @@ export const posts = [
     date: "2020 01, 2021",
     read: 5,
     coverImage: {
-      src: "../../assets/images/posts/7.jpg",
+      src: postImage2,
       alt: "Computer Screen",
     },
   },
@@ -81,13 +81,13 @@ export const posts = [
     date: "2020 01, 2021",
     read: 5,
     coverImage: {
-      src: "../assets/images/posts/7.jpg",
+      src: postImage6,
       alt: "Computer Screen",
     },
   },
   {
     id: "4",
-    featured: true,
+    featured: false,
     title: "How many monitors are too many monitors?",
     excerpt: "The number of monitors you need depends on what you're doing.",
     content:
@@ -100,7 +100,7 @@ export const posts = [
     date: "2020 01, 2021",
     read: 5,
     coverImage: {
-      src: "../assets/images/posts/7.jpg",
+      src: postImage7,
       alt: "Computer Screen",
     },
   },
@@ -119,13 +119,13 @@ export const posts = [
     date: "2020 01, 2021",
     read: 5,
     coverImage: {
-      src: "../assets/images/posts/7.jpg",
+      src: postImage4,
       alt: "Computer Screen",
     },
   },
   {
     id: "6",
-    featured: false,
+    featured: true,
     title: "What makes processor architecture different from GPU?",
     excerpt: "React Query is a library that helps you fetch, cache and update data in your React applications.",
     content:
@@ -138,7 +138,7 @@ export const posts = [
     date: "2020 01, 2021",
     read: 5,
     coverImage: {
-      src: "../assets/images/posts/7.jpg",
+      src: postImage3,
       alt: "Computer Screen",
     },
   },
@@ -157,7 +157,7 @@ export const posts = [
     date: "2020 01, 2021",
     read: 5,
     coverImage: {
-      src: "../assets/images/posts/7.jpg",
+      src: postImage5,
       alt: "Computer Screen",
     },
   },
@@ -176,7 +176,7 @@ export const posts = [
     date: "2020 01, 2021",
     read: 5,
     coverImage: {
-      src: "../assets/images/posts/7.jpg",
+      src: postImage2,
       alt: "Computer Screen",
     },
   },
@@ -195,7 +195,7 @@ export const posts = [
     date: "2020 01, 2021",
     read: 5,
     coverImage: {
-      src: "../assets/images/posts/7.jpg",
+      src: postImage1,
       alt: "Computer Screen",
     },
   },
@@ -214,7 +214,7 @@ export const posts = [
     date: "2020 01, 2021",
     read: 5,
     coverImage: {
-      src: "../assets/images/posts/7.jpg",
+      src: postImage3,
       alt: "Computer Screen",
     },
   },
@@ -233,7 +233,7 @@ export const posts = [
     date: "2020 01, 2021",
     read: 5,
     coverImage: {
-      src: "../assets/images/posts/7.jpg",
+      src: postImage3,
       alt: "Computer Screen",
     },
   },
@@ -252,7 +252,7 @@ export const posts = [
     date: "2020 01, 2021",
     read: 5,
     coverImage: {
-      src: "../assets/images/posts/7.jpg",
+      src: postImage7,
       alt: "Computer Screen",
     },
   },

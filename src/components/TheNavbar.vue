@@ -12,16 +12,29 @@
           <TheDarkModeSwitchVue />
         </li>
       </ul>
-      <button class="navbar__mobile-menu-button"><fa :icon="['fas', 'bars']" /></button>
+      <button class="navbar__mobile-menu-button" @click.prevent="toggleMobileMenu">
+        <fa :icon="['fas', 'bars']" />
+      </button>
     </div>
   </section>
+  <!-- Mobile Modal -->
+  <TheMobileMenuVue v-if="isMobileMenuOpen" :closeMenu="toggleMobileMenu" />
 </template>
 
 <script setup lang="ts">
+import { ref } from "vue";
 import { links } from "../mock-api/navigation/data";
 import TheDarkModeSwitchVue from "./TheDarkModeSwitch.vue";
+import TheMobileMenuVue from "./TheMobileMenu.vue";
 
-const hideScrollIndicator = () => {
+const isMobileMenuOpen = ref(false);
+
+const toggleMobileMenu = () => {
+  isMobileMenuOpen.value = !isMobileMenuOpen.value;
+  console.log(isMobileMenuOpen.value);
+};
+
+window.onscroll = () => {
   const scrollIndicator = document.querySelector(".navbar");
   if (document.documentElement.scrollTop > 20) {
     scrollIndicator?.classList.add("navbar--scrolled");
@@ -29,8 +42,6 @@ const hideScrollIndicator = () => {
     scrollIndicator?.classList.remove("navbar--scrolled");
   }
 };
-
-window.onscroll = hideScrollIndicator;
 </script>
 
 <style scoped lang="scss">

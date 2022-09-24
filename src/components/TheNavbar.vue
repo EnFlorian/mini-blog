@@ -1,10 +1,15 @@
 <template>
   <section class="navbar">
     <div class="navbar__wrapper container-lg">
-      <h1>Mini Blog</h1>
+      <router-link to="/">
+        <h1>Mini Blog</h1>
+      </router-link>
       <ul class="navbar__links">
         <li v-for="(link, index) in links" :key="index">
           <a class="navbar__link" :href="link.path">{{ link.name }}</a>
+        </li>
+        <li>
+          <TheDarkModeSwitchVue />
         </li>
       </ul>
       <button class="navbar__mobile-menu-button"><fa :icon="['fas', 'bars']" /></button>
@@ -14,6 +19,7 @@
 
 <script setup lang="ts">
 import { links } from "../mock-api/navigation/data";
+import TheDarkModeSwitchVue from "./TheDarkModeSwitch.vue";
 
 // add hover effect to navbar when scrolled down
 const hideScrollIndicator = () => {

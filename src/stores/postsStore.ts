@@ -16,7 +16,7 @@ export const usePostsStore = defineStore({
       return this.posts.find((post) => post.id === id);
     },
     getPostsByCategory(category: string) {
-      return this.posts.filter((post) => post.category === category);
+      return this.posts.filter((post) => post.category.toLowerCase() === category.toLowerCase());
     },
     getLatestPosts() {
       return this.posts.slice(0, 3);

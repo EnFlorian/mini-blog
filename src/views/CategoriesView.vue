@@ -4,10 +4,7 @@
     <h1 class="categories__title">Categories</h1>
     <ul class="categories__cards">
       <li v-for="(category, index) in Object.entries(categories)" :key="index" class="categories__card">
-        <router-link
-          class="categories__card-link"
-          :to="{ name: 'category', params: { categoryId: category[0].toLowerCase() } }"
-        >
+        <router-link class="categories__card-link" :to="`/categories/${category[0]}`">
           <h2 class="categories__card-title">{{ category[0] }}</h2>
           <p class="categories__card-description">
             {{ `${category[1]} ${category[1] > 1 ? "Posts" : "Post"}` }}

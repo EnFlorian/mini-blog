@@ -7,6 +7,7 @@ import TheNavbarVue from "./TheNavbar.vue";
 import TheNewsletterSectionVue from "./TheNewsletterSection.vue";
 import ThePostsSectionVue from "./ThePostsSection.vue";
 import NotificationModalVue from "./NotificationModal.vue";
+import TheMobileMenuVue from "./TheMobileMenu.vue";
 
 export {
   PostsContainerVue,
@@ -18,4 +19,5 @@ export {
   TheNewsletterSectionVue,
   ThePostsSectionVue,
   NotificationModalVue,
+  TheMobileMenuVue,
 };

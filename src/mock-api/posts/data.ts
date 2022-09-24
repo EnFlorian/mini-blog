@@ -1,4 +1,11 @@
 import authorImage from "../../assets/images/person.jpg";
+import postImage from "../../assets/images/posts/1.jpg";
+import postImage1 from "../../assets/images/posts/2.jpg";
+import postImage2 from "../../assets/images/posts/3.jpg";
+import postImage3 from "../../assets/images/posts/4.jpg";
+import postImage4 from "../../assets/images/posts/5.jpg";
+import postImage5 from "../../assets/images/posts/6.jpg";
+import postImage6 from "../../assets/images/posts/7.jpg";
 
 export const posts = [
   {
@@ -16,7 +23,7 @@ export const posts = [
     date: "2020 01, 2021",
     read: 5,
     coverImage: {
-      src: "../assets/images/posts/7.jpg",
+      src: "../../assets/images/posts/7.jpg",
       alt: "Computer Screen",
     },
   },
@@ -36,7 +43,7 @@ export const posts = [
     date: "2020 01, 2021",
     read: 5,
     coverImage: {
-      src: "../assets/images/posts/7.jpg",
+      src: postImage,
       alt: "Computer Screen",
     },
   },
@@ -55,7 +62,7 @@ export const posts = [
     date: "2020 01, 2021",
     read: 5,
     coverImage: {
-      src: "../assets/images/posts/7.jpg",
+      src: "../../assets/images/posts/7.jpg",
       alt: "Computer Screen",
     },
   },

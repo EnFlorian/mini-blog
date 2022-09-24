@@ -6,6 +6,7 @@ import TheHeroSectionVue from "./TheHeroSection.vue";
 import TheNavbarVue from "./TheNavbar.vue";
 import TheNewsletterSectionVue from "./TheNewsletterSection.vue";
 import ThePostsSectionVue from "./ThePostsSection.vue";
+import NotificationModalVue from "./NotificationModal.vue";
 
 export {
   PostsContainerVue,
@@ -16,4 +17,5 @@ export {
   TheNavbarVue,
   TheNewsletterSectionVue,
   ThePostsSectionVue,
+  NotificationModalVue,
 };

@@ -15,6 +15,8 @@ import { TheNavbarVue, TheFooterVue } from "./components";
 
 <style scoped lang="scss">
 .app {
+  display: flex;
+  flex-direction: column;
   background-color: var(--clr-bg-1);
 
   &__main-content {

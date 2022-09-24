@@ -2,10 +2,10 @@
   <div class="category-container">
     <h2 class="category-container__title">{{ title }}</h2>
     <div class="category-container__posts">
-      <PostCardVue v-for="post in renderedPosts" :key="post.id" :post="post" />
+      <PostCard v-for="post in renderedPosts" :key="post.id" :post="post" />
     </div>
     <div v-if="pagination && posts.length > renderedPosts.length" class="category-container__pagination">
-      <button class="category-container__pagination-button" @click="addMorePosts">Load more</button>
+      <button class="category-container__pagination-button" @click="addMorePosts">More</button>
     </div>
   </div>
 </template>
@@ -14,6 +14,7 @@
 import {} from "@vue/reactivity";
 import { ref } from "vue";
 import { IPost } from "../types/post";
+import PostCard from "./PostCard.vue";
 
 const props = defineProps<{
   title: string;
@@ -25,7 +26,6 @@ const props = defineProps<{
 let renderedPosts = ref(props.amount ? props.posts.slice(0, props.amount) : props.posts.slice(0, 3));
 
 const addMorePosts = () => {
-  console.log(renderedPosts.value.length);
   if (props.amount) {
     renderedPosts.value = [
       ...renderedPosts.value,

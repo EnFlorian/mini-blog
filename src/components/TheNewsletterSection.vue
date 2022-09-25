@@ -11,6 +11,8 @@
           placeholder="Enter your email address"
           v-model="formData.email"
         />
+        <p v-if="$v.email.error" class="newsletter-section__form-error">Please enter a valid Email Address.</p>
+
         <button class="newsletter-section__form-button" @click.prevent="handleSubmit">Subscribe</button>
       </form>
     </div>
@@ -42,7 +44,9 @@ const $v = useVuelidate(rules, formData);
 
 const handleSubmit = async () => {
   const result = await $v.value.$validate();
-  showModal.value = true;
+  if (result) {
+    showModal.value = true;
+  }
 };
 
 const showModal = ref(false);

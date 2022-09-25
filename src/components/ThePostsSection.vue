@@ -1,5 +1,5 @@
 <template>
-  <section class="post-section">
+  <section class="post-section container-md">
     <!-- recent post without more functionality -->
     <PostsContainerVue :posts="featuredPosts" :title="'Featured posts'" />
     <!-- remaining posts  -->

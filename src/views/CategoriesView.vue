@@ -1,6 +1,5 @@
 <template>
-  <!-- render card with catgory name and number -->
-  <div class="categories">
+  <div class="categories container-lg">
     <h1 class="categories__title">Categories</h1>
     <ul class="categories__cards">
       <li v-for="(category, index) in Object.entries(categories)" :key="index" class="categories__card">

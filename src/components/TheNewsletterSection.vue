@@ -1,5 +1,5 @@
 <template>
-  <section class="newsletter-section">
+  <section class="newsletter-section container-lg">
     <div class="newsletter-section__wrapper">
       <fa :icon="['fas', 'envelope']" class="newsletter-section__icon" />
       <h2 class="newsletter-section__title">Subscribe to our Newsletter</h2>

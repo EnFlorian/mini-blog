@@ -1,17 +1,14 @@
 <template>
-  <section v-if="show" class="notification-modal" @click.prevent.self="closeModal">
-    <div class="notification-modal__container">
-      <!-- <header class="notification-modal__header">
-        <button class="notification-modal__close" @click="closeModal">
-          <fa icon="times" @click="closeModal" />
-        </button>
-      </header> -->
-      <slot></slot>
-      <footer class="notification-modal__footer">
-        <button class="notification-modal__button" @click="closeModal">Close</button>
-      </footer>
-    </div>
-  </section>
+  <Transition name="fade">
+    <section v-if="show" class="notification-modal" @click.prevent.self="closeModal">
+      <div class="notification-modal__container">
+        <slot></slot>
+        <footer class="notification-modal__footer">
+          <button class="notification-modal__button" @click="closeModal">Close</button>
+        </footer>
+      </div>
+    </section>
+  </Transition>
 </template>
 
 <script setup lang="ts">
@@ -46,27 +43,6 @@ const props = defineProps<{
     color: var(--clr-text-0);
   }
 
-  // &__header {
-  //   display: flex;
-  //   justify-content: flex-end;
-  // }
-
-  // &__close {
-  //   background-color: var(--clr-accent-1);
-  //   width: 3rem;
-  //   height: 3rem;
-  //   border-radius: 50%;
-  //   border: none;
-  //   cursor: pointer;
-  //   font-size: 2rem;
-  //   color: var(--clr-text-0);
-  //   transition: var(--transition-base);
-
-  //   &:hover {
-  //     background-color: var(--clr-accent-2);
-  //   }
-  // }
-
   &__footer {
     display: flex;
     justify-content: center;
@@ -86,5 +62,19 @@ const props = defineProps<{
       background-color: var(--clr-accent-1);
     }
   }
+}
+
+.fade-enter-to,
+.fade-leave-from {
+  opacity: 1;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
 }
 </style>

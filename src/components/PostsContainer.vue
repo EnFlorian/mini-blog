@@ -1,9 +1,9 @@
 <template>
   <div class="posts-container">
     <h2 class="posts-container__title">{{ title }}</h2>
-    <ul class="posts-container__posts">
+    <TransitionGroup appear class="posts-container__posts" name="posts" tag="ul">
       <PostCard v-for="post in renderedPosts" :key="post.id" :post="post" />
-    </ul>
+    </TransitionGroup>
     <button
       v-if="pagination && posts.length > renderedPosts.length"
       class="posts-container__pagination-button"
@@ -44,4 +44,29 @@ const addMorePosts = () => {
 };
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.posts-container {
+  &__title {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    color: var(--clr-text-1);
+  }
+
+  &__posts {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+.posts-enter-active,
+.posts-leave-active {
+  transition: all 0.5s ease;
+}
+.posts-enter-from,
+.posts-leave-to {
+  opacity: 0;
+  transform: translateY(50px);
+}
+</style>

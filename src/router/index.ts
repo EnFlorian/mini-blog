@@ -3,7 +3,7 @@ import HomeView from "../views/HomeView.vue";
 import PostView from "../views/PostView.vue";
 import CategoryView from "../views/CategoryView.vue";
 import CategoriesView from "../views/CategoriesView.vue";
-import ContactView from "../views/ContactView.vue";
+import AboutView from "../views/AboutView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -31,7 +31,7 @@ const router = createRouter({
     {
       path: "/about",
       name: "about",
-      component: () => import("../views/AboutView.vue"),
+      component: AboutView,
     },
     {
       path: "/:pathMatch(.*)*",

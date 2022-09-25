@@ -16,9 +16,9 @@
         <fa :icon="['fas', 'bars']" />
       </button>
     </div>
+    <!-- Mobile Modal -->
+    <TheMobileMenuVue v-if="isMobileMenuOpen" :closeMenu="toggleMobileMenu" />
   </section>
-  <!-- Mobile Modal -->
-  <TheMobileMenuVue v-if="isMobileMenuOpen" :closeMenu="toggleMobileMenu" />
 </template>
 
 <script setup lang="ts">
@@ -50,8 +50,10 @@ window.onscroll = () => {
   position: sticky;
   top: 0;
   transition: var(--transition-base);
+  z-index: 100;
 
   &--scrolled {
+    box-shadow: var(--box-shadow-1);
     background-color: var(--clr-bg-2);
   }
 

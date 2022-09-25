@@ -1,5 +1,5 @@
 <template>
-  <section class="about">
+  <section class="about container-lg">
     <header class="about__header">
       <div class="about__left-content">
         <img :src="aboutImage" alt="about" />
@@ -41,14 +41,13 @@
         <button class="about__form-button" @click.prevent="handleSubmit">Send</button>
       </form>
     </section>
+    <NotificationModal :show="showModal" :closeModal="toggleModal">
+      <div class="about__modal-content">
+        <h1 class="about__modal-title">Thank you for your message!</h1>
+        <p class="about__modal-description">I will get back to you as soon as possible.</p>
+      </div>
+    </NotificationModal>
   </section>
-  <!-- Modal -->
-  <NotificationModal :show="showModal" :closeModal="toggleModal">
-    <div class="about__modal-content">
-      <h1 class="about__modal-title">Thank you for your message!</h1>
-      <p class="about__modal-description">I will get back to you as soon as possible.</p>
-    </div>
-  </NotificationModal>
 </template>
 
 <script setup lang="ts">

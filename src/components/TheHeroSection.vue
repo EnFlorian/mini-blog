@@ -1,20 +1,22 @@
 <template>
   <section class="hero-section">
-    <div class="hero-section__left-content">
-      <h1 class="hero-section__title">Hey, I'm Akira</h1>
-      <p class="hero-section__description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptates, quod, quia, voluptate quae
-        voluptatem quibusdam necessitatibus quidem voluptatum quos nesciunt.
-      </p>
-      <!-- horizontal subscribe form and submit button -->
-      <form class="hero-section__subscribe-form">
-        <input class="hero-section__subscribe-form-input" type="email" placeholder="Enter your email address" />
-        <button class="hero-section__subscribe-form-button">Subscribe</button>
-      </form>
-    </div>
-    <div class="hero-section__right-content">
-      <div class="hero-section__image-wrapper">
-        <img class="hero-section__image" src="../assets/images/person.jpg" />
+    <div class="hero-section__wrapper container-lg">
+      <div class="hero-section__left-content">
+        <h1 class="hero-section__title">Hey, I'm Akira</h1>
+        <p class="hero-section__description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptates, quod, quia, voluptate quae
+          voluptatem quibusdam necessitatibus quidem voluptatum quos nesciunt.
+        </p>
+        <!-- horizontal subscribe form and submit button -->
+        <form class="hero-section__subscribe-form">
+          <input class="hero-section__subscribe-form-input" type="email" placeholder="Enter your email address" />
+          <button class="hero-section__subscribe-form-button">Subscribe</button>
+        </form>
+      </div>
+      <div class="hero-section__right-content">
+        <div class="hero-section__image-wrapper">
+          <img class="hero-section__image" src="../assets/images/person.jpg" />
+        </div>
       </div>
     </div>
   </section>
@@ -24,11 +26,15 @@
 
 <style scoped lang="scss">
 .hero-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10rem 0 5rem 0;
-  color: var(--clr-text-1);
+  background-color: var(--clr-bg-2);
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 0 5rem 0;
+    color: var(--clr-text-1);
+  }
 
   &__left-content {
     flex: 1;

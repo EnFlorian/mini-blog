@@ -14,7 +14,7 @@ import { TheNewsletterSectionVue, ThePostsSectionVue, TheHeroSectionVue } from "
 .home {
   display: flex;
   flex-direction: column;
-  padding: 5rem 0;
+  padding-bottom: 5rem;
   gap: 5rem;
 }
 </style>

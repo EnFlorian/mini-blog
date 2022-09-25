@@ -1,6 +1,5 @@
 <template>
-  <div v-if="!post">Loading...</div>
-  <section class="post" v-if="post">
+  <section class="post container-lg" v-if="post">
     <header class="post__header">
       <h1 class="post__title">{{ post.title }}</h1>
       <div class="post__meta">

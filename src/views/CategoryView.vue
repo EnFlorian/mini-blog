@@ -1,5 +1,7 @@
 <template>
-  <PostsContainer :posts="posts" :pagination="true" :title="(category as string)" />
+  <div class="container-lg">
+    <PostsContainer :posts="posts" :pagination="true" :title="(category as string)" />
+  </div>
 </template>
 
 <script setup lang="ts">

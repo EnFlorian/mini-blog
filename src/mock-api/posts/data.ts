@@ -256,4 +256,176 @@ export const posts = [
       alt: "Computer Screen",
     },
   },
+  // ########################
+  {
+    id: "13",
+    featured: false,
+    title: "10 Ways to decrease the time you train your models",
+    excerpt: "React Query is a library that helps you fetch, cache and update data in your React applications.",
+    content:
+      "React Query is a library that helps you fetch, cache and update data in your React applications. It will automatically keep your UI in sync with the latest data and reduce the amount of boilerplate in your application.",
+    category: "Machine Learning",
+    author: {
+      name: "Akira Bauer",
+      image: authorImage,
+    },
+    date: "2020 01, 2021",
+    read: 5,
+    coverImage: {
+      src: postImage7,
+      alt: "Computer Screen",
+    },
+  },
+  {
+    id: "14",
+    featured: false,
+    title: "The best way to learn to Data Science?",
+    excerpt: "React Query is a library that helps you fetch, cache and update data in your React applications.",
+    content:
+      "React Query is a library that helps you fetch, cache and update data in your React applications. It will automatically keep your UI in sync with the latest data and reduce the amount of boilerplate in your application.",
+    category: "Data Science",
+    author: {
+      name: "Akira Bauer",
+      image: authorImage,
+    },
+    date: "2020 01, 2021",
+    read: 5,
+    coverImage: {
+      src: postImage7,
+      alt: "Computer Screen",
+    },
+  },
+  {
+    id: "16",
+    featured: false,
+    title: "Does computer vision really help us to recognize cancer?",
+    excerpt: "React Query is a library that helps you fetch, cache and update data in your React applications.",
+    content:
+      "React Query is a library that helps you fetch, cache and update data in your React applications. It will automatically keep your UI in sync with the latest data and reduce the amount of boilerplate in your application.",
+    category: "Computer Vision",
+    author: {
+      name: "Akira Bauer",
+      image: authorImage,
+    },
+    date: "2020 01, 2021",
+    read: 5,
+    coverImage: {
+      src: postImage7,
+      alt: "Computer Screen",
+    },
+  },
+  {
+    id: "17",
+    featured: false,
+    title: "Will Transformers completely replace LSTMs?",
+    excerpt: "React Query is a library that helps you fetch, cache and update data in your React applications.",
+    content:
+      "React Query is a library that helps you fetch, cache and update data in your React applications. It will automatically keep your UI in sync with the latest data and reduce the amount of boilerplate in your application.",
+    category: "Language Processing",
+    author: {
+      name: "Akira Bauer",
+      image: authorImage,
+    },
+    date: "2020 01, 2021",
+    read: 5,
+    coverImage: {
+      src: postImage7,
+      alt: "Computer Screen",
+    },
+  },
+  {
+    id: "18",
+    featured: false,
+    title: "How can you jailbreak your PSP?",
+    excerpt: "React Query is a library that helps you fetch, cache and update data in your React applications.",
+    content:
+      "React Query is a library that helps you fetch, cache and update data in your React applications. It will automatically keep your UI in sync with the latest data and reduce the amount of boilerplate in your application.",
+    category: "Console",
+    author: {
+      name: "Akira Bauer",
+      image: authorImage,
+    },
+    date: "2020 01, 2021",
+    read: 5,
+    coverImage: {
+      src: postImage7,
+      alt: "Computer Screen",
+    },
+  },
+  {
+    id: "19",
+    featured: false,
+    title: "Stay healthy at work with these 10 tips",
+    excerpt: "React Query is a library that helps you fetch, cache and update data in your React applications.",
+    content:
+      "React Query is a library that helps you fetch, cache and update data in your React applications. It will automatically keep your UI in sync with the latest data and reduce the amount of boilerplate in your application.",
+    category: "Health",
+    author: {
+      name: "Akira Bauer",
+      image: authorImage,
+    },
+    date: "2020 01, 2021",
+    read: 5,
+    coverImage: {
+      src: postImage7,
+      alt: "Computer Screen",
+    },
+  },
+  {
+    id: "20",
+    featured: false,
+    title: "How our working habits have changed over the years",
+    excerpt: "React Query is a library that helps you fetch, cache and update data in your React applications.",
+    content:
+      "React Query is a library that helps you fetch, cache and update data in your React applications. It will automatically keep your UI in sync with the latest data and reduce the amount of boilerplate in your application.",
+    category: "Office",
+    author: {
+      name: "Akira Bauer",
+      image: authorImage,
+    },
+    date: "2020 01, 2021",
+    read: 5,
+    coverImage: {
+      src: postImage7,
+      alt: "Computer Screen",
+    },
+  },
+  {
+    id: "21",
+    featured: false,
+    title: "Can you really learn to code in 10 minutes?",
+    excerpt: "React Query is a library that helps you fetch, cache and update data in your React applications.",
+    content:
+      "React Query is a library that helps you fetch, cache and update data in your React applications. It will automatically keep your UI in sync with the latest data and reduce the amount of boilerplate in your application.",
+    category: "Learning",
+    author: {
+      name: "Akira Bauer",
+      image: authorImage,
+    },
+    date: "2020 01, 2021",
+    read: 5,
+    coverImage: {
+      src: postImage7,
+      alt: "Computer Screen",
+    },
+  },
+  {
+    id: "22",
+    featured: false,
+    title: "How many hours should work out?",
+    excerpt: "React Query is a library that helps you fetch, cache and update data in your React applications.",
+    content:
+      "React Query is a library that helps you fetch, cache and update data in your React applications. It will automatically keep your UI in sync with the latest data and reduce the amount of boilerplate in your application.",
+    category: "Sports",
+    author: {
+      name: "Akira Bauer",
+      image: authorImage,
+    },
+    date: "2020 01, 2021",
+    read: 5,
+    coverImage: {
+      src: postImage7,
+      alt: "Computer Screen",
+    },
+  },
 ];

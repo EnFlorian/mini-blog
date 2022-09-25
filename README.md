@@ -11,7 +11,7 @@
 
 ## 👩‍💻 Live Website
 
-### [Mini Blog (Vercel)]()
+### [Mini Blog (Vercel)](https://mini-blog-phi.vercel.app)
 
 ## 🖼 Offline Demo
 
@@ -43,10 +43,10 @@ yarn run start
 | Technology              | Description                            |
 |-------------------------|----------------------------------------|
 | Typescript              |   Programming Language
-| Vite                    |   Build tool as replacement for CRA    |
+| Vite                    |   Build tool as replacement for vue cli    |
 | Vue.js                   |   Frontend Library                              |
 | SCSS                    |   CSS preprocessor                              |
-| pinia              |   Global state management, Darkmode/Posts  |
+| pinia              |   Global state management, posts  |
 
 
 #### Implementation

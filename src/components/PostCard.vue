@@ -24,3 +24,36 @@ const props = defineProps<{
   post: IPost;
 }>();
 </script>
+
+<style scoped lang="scss">
+.post-card {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--clr-bg-2);
+  box-shadow: var(--box-shadow-1);
+
+  &__left-content {
+    flex: 1;
+    width: 100%;
+    border-radius: 0.2rem;
+    overflow: hidden;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__right-content {
+    flex: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+</style>

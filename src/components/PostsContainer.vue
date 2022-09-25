@@ -1,12 +1,16 @@
 <template>
-  <div class="category-container">
-    <h2 class="category-container__title">{{ title }}</h2>
-    <div class="category-container__posts">
+  <div class="posts-container">
+    <h2 class="posts-container__title">{{ title }}</h2>
+    <ul class="posts-container__posts">
       <PostCard v-for="post in renderedPosts" :key="post.id" :post="post" />
-    </div>
-    <div v-if="pagination && posts.length > renderedPosts.length" class="category-container__pagination">
-      <button class="category-container__pagination-button" @click="addMorePosts">More</button>
-    </div>
+    </ul>
+    <button
+      v-if="pagination && posts.length > renderedPosts.length"
+      class="posts-container__pagination-button"
+      @click="addMorePosts"
+    >
+      More
+    </button>
   </div>
 </template>
 
@@ -39,3 +43,5 @@ const addMorePosts = () => {
   }
 };
 </script>
+
+<style scoped lang="scss"></style>

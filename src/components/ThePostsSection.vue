@@ -1,8 +1,10 @@
 <template>
-  <!-- recent post without more functionality -->
-  <PostsContainerVue :posts="featuredPosts" :title="'Featured posts'" />
-  <!-- remaining posts  -->
-  <PostsContainerVue :posts="remainingPosts" :title="'Latest Posts'" :pagination="true" />
+  <section class="post-section">
+    <!-- recent post without more functionality -->
+    <PostsContainerVue :posts="featuredPosts" :title="'Featured posts'" />
+    <!-- remaining posts  -->
+    <PostsContainerVue :posts="remainingPosts" :title="'Latest Posts'" :pagination="true" />
+  </section>
 </template>
 
 <script setup lang="ts">
@@ -15,3 +17,5 @@ const posts = computed(() => postsStore.posts);
 const featuredPosts = computed(() => posts.value.filter((post) => post.featured));
 const remainingPosts = computed(() => posts.value.filter((post) => !post.featured));
 </script>
+
+<style scoped lang="scss"></style>

@@ -29,9 +29,9 @@ const router = createRouter({
       component: CategoryView,
     },
     {
-      path: "/contact",
-      name: "contact",
-      component: () => import("../views/ContactView.vue"),
+      path: "/about",
+      name: "about",
+      component: () => import("../views/AboutView.vue"),
     },
     {
       path: "/:pathMatch(.*)*",

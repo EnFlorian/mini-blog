@@ -32,17 +32,13 @@
 import { computed } from "@vue/reactivity";
 import { marked } from "marked";
 import { useRoute } from "vue-router";
-import { fetchSocials } from "../mock-api/socials/api";
+import { socials } from "../mock-api/socials/data";
 import { usePostsStore } from "../stores/postsStore";
 
 const { postId } = useRoute().params;
 const postsStore = usePostsStore();
 
 const post = postsStore.getPostById(postId as string);
-const socials = fetchSocials();
-
-console.log(post);
-console.log(postId);
 
 const markdownToHtml = computed(() => {
   return marked.parse(post?.content || "");

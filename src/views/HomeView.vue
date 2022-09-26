@@ -17,4 +17,10 @@ import { TheNewsletterSectionVue, ThePostsSectionVue, TheHeroSectionVue } from "
   padding-bottom: 5rem;
   gap: 5rem;
 }
+
+@media screen and (max-width: 768px) {
+  .home {
+    gap: 2rem;
+  }
+}
 </style>

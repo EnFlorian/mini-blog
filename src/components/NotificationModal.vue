@@ -64,6 +64,18 @@ const props = defineProps<{
   }
 }
 
+@media screen and (max-width: 768px) {
+  .notification-modal {
+    &__container {
+      width: 90%;
+    }
+
+    &__button {
+      width: 100%;
+    }
+  }
+}
+
 .fade-enter-to,
 .fade-leave-from {
   opacity: 1;

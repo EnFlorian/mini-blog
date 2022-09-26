@@ -1,5 +1,5 @@
 <template>
-  <section class="post-section container-md">
+  <section class="posts-section container-md">
     <!-- recent post without more functionality -->
     <PostsContainerVue :posts="featuredPosts" :title="'Featured posts'" />
     <!-- remaining posts  -->
@@ -18,4 +18,10 @@ const featuredPosts = computed(() => posts.value.filter((post) => post.featured)
 const remainingPosts = computed(() => posts.value.filter((post) => !post.featured));
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.posts-section {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+</style>

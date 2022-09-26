@@ -79,7 +79,7 @@ const addMorePosts = () => {
   &__pagination-button {
     background-color: var(--clr-bg-2);
     border: none;
-    border-radius: 0.2rem;
+    border-radius: 0.3rem;
     padding: 0.5rem 1rem;
     font-size: 1.5rem;
     font-weight: 400;
@@ -88,7 +88,8 @@ const addMorePosts = () => {
     transition: var(--transition-fast);
 
     &:hover {
-      transform: scale(1.02);
+      transform: scaleY(1.05);
+      color: var(--clr-accent-1);
     }
   }
 }

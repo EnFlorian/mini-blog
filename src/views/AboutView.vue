@@ -127,6 +127,7 @@ const handleSubmit = async () => {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    padding: 1rem;
   }
 
   &__title {
@@ -258,6 +259,71 @@ const handleSubmit = async () => {
     font-size: 1.2rem;
     font-weight: 400;
     margin-bottom: 1rem;
+  }
+}
+
+// Media Queries
+@media screen and (max-width: 1050px) {
+  .about {
+    padding: 2rem 0;
+    &__header {
+      padding: 2rem;
+      flex-direction: column;
+    }
+
+    &__left-content {
+      max-height: 30rem;
+      overflow: hidden;
+    }
+
+    &__image {
+      border-left: 5px solid var(--clr-accent-1);
+    }
+
+    &__left-content {
+      width: 100%;
+    }
+
+    &__right-content {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about {
+    padding: 1rem 0;
+
+    &__right-content {
+      align-items: center;
+    }
+
+    &__description {
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    &__socials {
+      justify-content: center;
+
+      li {
+        font-size: 2rem;
+      }
+    }
+
+    &__content {
+      padding: 1rem;
+    }
+
+    &__modal-title {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+
+    &__modal-description {
+      font-size: 1rem;
+      text-align: center;
+    }
   }
 }
 </style>

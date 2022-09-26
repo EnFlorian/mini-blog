@@ -99,4 +99,10 @@ const categories = posts.reduce((acc, post) => {
     color: var(--clr-text-2);
   }
 }
+
+@media screen and (max-width: 768px) {
+  .categories {
+    padding: 2rem 0;
+  }
+}
 </style>

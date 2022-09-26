@@ -46,8 +46,13 @@ const markdownToHtml = computed(() => {
 
 <style scoped lang="scss">
 .post {
-  padding: 5rem 0;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  background-color: var(--clr-bg-2);
+  padding: 1rem;
+  border-radius: 0.5rem;
   color: var(--clr-text-1);
+  box-shadow: var(--box-shadow-1);
 
   &__header {
     margin-bottom: 3rem;
@@ -126,6 +131,55 @@ const markdownToHtml = computed(() => {
 
   &__socials-item {
     font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .post {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    &__title {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .post {
+    padding: 0.5rem;
+
+    &__title {
+      font-size: 1.5rem;
+      margin-bottom: 0;
+    }
+
+    &__meta {
+      margin-bottom: 0.5rem;
+    }
+
+    &__author-avatar {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+
+    &__author {
+      font-size: 0.75rem;
+    }
+
+    &__date {
+      font-size: 0.75rem;
+      font-weight: 300;
+    }
+
+    &__read-time {
+      font-size: 0.75rem;
+      font-weight: 300;
+    }
+
+    &__image {
+      margin-bottom: 2rem;
+    }
   }
 }
 </style>

@@ -75,7 +75,7 @@ const props = defineProps<{
 
   &__meta {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     gap: 1rem;
     font-size: 1.2rem;
     font-weight: 300;
@@ -117,6 +117,85 @@ const props = defineProps<{
     width: fit-content;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .post-card {
+    flex-direction: column;
+    height: auto;
+    gap: 0.5rem;
+
+    &__left-content {
+      width: 100%;
+      height: 15rem;
+    }
+
+    &__right-content {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .post-card {
+    &__author-avatar {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+
+    &__author {
+      font-size: 1rem;
+    }
+
+    &__date {
+      font-size: 0.8rem;
+    }
+
+    &__read-time {
+      font-size: 0.8rem;
+    }
+
+    &__description {
+      font-size: 0.9rem;
+    }
+
+    &__title {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .post-card {
+    &__meta {
+      gap: 0.5rem;
+    }
+    &__author-avatar {
+      width: 1.2rem;
+      height: 1.2rem;
+    }
+
+    &__author {
+      font-size: 0.8rem;
+    }
+
+    &__date {
+      font-size: 0.6rem;
+    }
+
+    &__read-time {
+      font-size: 0.6rem;
+    }
+
+    &__description {
+      font-size: 0.8rem;
+    }
+
+    &__title {
+      font-size: 1rem;
+    }
   }
 }
 </style>

@@ -66,7 +66,7 @@ const closeModal = () => {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    padding: 5rem 0;
+    padding: 5rem 1rem;
     color: var(--clr-text-0);
   }
 
@@ -151,6 +151,69 @@ const closeModal = () => {
     font-size: 1.2rem;
     font-weight: 400;
     margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .newsletter-section {
+    &__wrapper {
+      padding: 3rem 1rem;
+    }
+
+    &__title {
+      font-size: 1.5rem;
+    }
+
+    &__description {
+      font-size: 1rem;
+    }
+
+    &__form {
+      max-width: 30rem;
+    }
+
+    &__form-input {
+      font-size: 0.8rem;
+    }
+
+    &__modal-title {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+
+    &__modal-description {
+      font-size: 1rem;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .newsletter-section {
+    &__title {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    &__description {
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    &__form {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__form-input {
+      width: 100%;
+      margin-bottom: 0.5rem;
+    }
+
+    &__form-button {
+      width: 100%;
+    }
   }
 }
 </style>

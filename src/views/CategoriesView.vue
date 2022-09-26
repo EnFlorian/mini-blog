@@ -73,6 +73,11 @@ const categories = posts.reduce((acc, post) => {
     border-radius: 0.2rem;
     width: 100%;
     cursor: pointer;
+    transition: var(--transition-base);
+
+    &:hover {
+      transform: scale(1.02);
+    }
   }
 
   &__card-link {

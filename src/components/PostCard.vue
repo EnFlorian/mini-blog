@@ -29,36 +29,35 @@ const props = defineProps<{
 
 <style scoped lang="scss">
 .post-card {
+  background-color: var(--clr-bg-2);
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow-1);
   display: flex;
   gap: 1rem;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  background-color: var(--clr-bg-2);
-  box-shadow: var(--box-shadow-1);
   height: 18rem;
   overflow: hidden;
+  padding: 1rem;
 
   &__left-content {
-    flex: 1;
-    width: 100%;
     border-radius: 0.2rem;
+    flex: 1;
     overflow: hidden;
-    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+    width: 100%;
   }
 
   &__image {
-    width: 100%;
     height: 100%;
     object-fit: cover;
+    width: 100%;
   }
 
   &__right-content {
-    flex: 1;
-    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    flex: 1;
     gap: 0.5rem;
+    justify-content: space-between;
+    width: 100%;
   }
 
   &__main-content {
@@ -68,25 +67,25 @@ const props = defineProps<{
   }
 
   &__title {
+    color: var(--clr-text-1);
     font-size: 1.4rem;
     font-weight: 400;
-    color: var(--clr-text-1);
   }
 
   &__meta {
-    display: flex;
     align-items: center;
-    gap: 1rem;
+    color: var(--clr-text-1);
+    display: flex;
     font-size: 1.2rem;
     font-weight: 300;
-    color: var(--clr-text-1);
+    gap: 1rem;
   }
 
   &__author-avatar {
-    width: 2rem;
-    height: 2rem;
     border-radius: 50%;
+    height: 2rem;
     object-fit: cover;
+    width: 2rem;
   }
 
   &__author {
@@ -94,46 +93,47 @@ const props = defineProps<{
   }
 
   &__date {
-    font-weight: 400;
     font-size: 1rem;
+    font-weight: 400;
   }
 
   &__read-time {
-    font-weight: 400;
     font-size: 1rem;
+    font-weight: 400;
   }
 
   &__description {
-    font-size: 1.1rem;
-    font-weight: 300;
     color: var(--clr-text-2);
+    font-size: 1rem;
+    font-weight: 400;
   }
 
   &__read-more {
+    border-radius: 0.5rem;
+    border: 1px solid var(--clr-text-0);
+    color: var(--clr-text-0);
     font-size: 1.2rem;
     font-weight: 400;
-    color: var(--clr-text-0);
-    border: 1px solid var(--clr-text-0);
-    width: fit-content;
     padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
+    width: fit-content;
   }
 }
 
+// Media Queries
 @media screen and (max-width: 870px) {
   .post-card {
     flex-direction: column;
-    height: auto;
     gap: 0.5rem;
+    height: auto;
 
     &__left-content {
-      width: 100%;
       height: 15rem;
+      width: 100%;
     }
 
     &__right-content {
-      width: 100%;
       height: auto;
+      width: 100%;
     }
   }
 }
@@ -141,8 +141,8 @@ const props = defineProps<{
 @media screen and (max-width: 870px) {
   .post-card {
     &__author-avatar {
-      width: 1.5rem;
       height: 1.5rem;
+      width: 1.5rem;
     }
 
     &__author {
@@ -173,8 +173,8 @@ const props = defineProps<{
       gap: 0.5rem;
     }
     &__author-avatar {
-      width: 1.2rem;
       height: 1.2rem;
+      width: 1.2rem;
     }
 
     &__author {

@@ -8,7 +8,6 @@
         <span class="post__date">{{ post.date }}</span>
         <span class="post__read-time">{{ post.read }} min read</span>
       </div>
-
       <img class="post__image" :src="post.coverImage.src" :alt="post.coverImage.alt" />
     </header>
     <div class="post__content markdown" v-html="markdownToHtml" />
@@ -71,10 +70,10 @@ const markdownToHtml = computed(() => {
   }
 
   &__author-avatar {
-    width: 2rem;
-    height: 2rem;
     border-radius: 50%;
+    height: 2rem;
     margin-right: 0.5rem;
+    width: 2rem;
   }
 
   &__author {
@@ -95,11 +94,11 @@ const markdownToHtml = computed(() => {
   }
 
   &__image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
     border-radius: 0.8rem;
+    height: 100%;
     margin-bottom: 3rem;
+    object-fit: cover;
+    width: 100%;
   }
 
   &__content {
@@ -109,19 +108,19 @@ const markdownToHtml = computed(() => {
   }
 
   &__footer {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: space-between;
   }
 
   &__category {
+    background-color: var(--clr-accent-2);
+    border-radius: 0.8rem;
+    color: var(--clr-accent-1);
     font-size: 0.875rem;
     font-weight: 700;
-    text-transform: uppercase;
-    color: var(--clr-accent-1);
-    background-color: var(--clr-accent-2);
     padding: 0.5rem 1rem;
-    border-radius: 0.8rem;
+    text-transform: uppercase;
   }
 
   &__socials {
@@ -134,10 +133,11 @@ const markdownToHtml = computed(() => {
   }
 }
 
+// Media Queries
 @media (max-width: 768px) {
   .post {
-    margin-top: 2rem;
     margin-bottom: 2rem;
+    margin-top: 2rem;
 
     &__title {
       font-size: 2rem;
@@ -159,8 +159,8 @@ const markdownToHtml = computed(() => {
     }
 
     &__author-avatar {
-      width: 1.5rem;
       height: 1.5rem;
+      width: 1.5rem;
     }
 
     &__author {

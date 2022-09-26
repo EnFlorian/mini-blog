@@ -14,10 +14,11 @@ import { TheNewsletterSectionVue, ThePostsSectionVue, TheHeroSectionVue } from "
 .home {
   display: flex;
   flex-direction: column;
-  padding-bottom: 5rem;
   gap: 5rem;
+  padding-bottom: 5rem;
 }
 
+// Media Queries
 @media screen and (max-width: 768px) {
   .home {
     gap: 2rem;

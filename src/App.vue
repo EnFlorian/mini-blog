@@ -19,9 +19,9 @@ import { TheNavbarVue, TheFooterVue } from "./components";
 
 <style scoped lang="scss">
 .app {
+  background-color: var(--clr-bg-1);
   display: flex;
   flex-direction: column;
-  background-color: var(--clr-bg-1);
 
   &__main-content {
     min-height: calc(100vh - var(--navbar-height));
@@ -47,6 +47,7 @@ import { TheNavbarVue, TheFooterVue } from "./components";
 .route-enter-active {
   transition: opacity 0.4s ease-in-out;
 }
+
 .route-leave-active {
   transition: opacity 0.3s ease;
 }

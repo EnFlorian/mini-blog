@@ -93,64 +93,64 @@ const handleSubmit = async () => {
 
 <style scoped lang="scss">
 .about {
-  padding: 5rem 0;
+  align-items: center;
   color: var(--clr-text-0);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding: 5rem 0;
 
   &__header {
-    border-radius: 0.3rem;
-    width: 100%;
-    display: flex;
     align-items: center;
-    min-height: 20rem;
+    background-color: var(--clr-bg-2);
+    border-radius: 0.3rem;
+    display: flex;
     gap: 2rem;
     margin-bottom: 2rem;
-    background-color: var(--clr-bg-2);
+    min-height: 20rem;
     overflow: hidden;
+    width: 100%;
   }
 
   &__left-content {
-    flex: 1;
     display: flex;
+    flex: 1;
   }
 
   &__image {
-    width: 100%;
     object-fit: cover;
+    width: 100%;
   }
 
   &__right-content {
-    flex: 2;
-    width: 100%;
     display: flex;
     flex-direction: column;
+    flex: 2;
     gap: 1rem;
     padding: 1rem;
+    width: 100%;
   }
 
   &__title {
-    width: fit-content;
-    line-height: 1;
-    position: relative;
+    color: var(--clr-text-1);
     font-size: 2.5rem;
     font-weight: 500;
-    color: var(--clr-text-1);
+    line-height: 1;
+    position: relative;
+    width: fit-content;
   }
 
   &__description {
+    color: var(--clr-text-2);
     font-size: 1.2rem;
     font-weight: 300;
-    color: var(--clr-text-2);
   }
 
   &__socials {
     display: flex;
     gap: 1rem;
     list-style: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
   }
 
   &__socials li {
@@ -166,23 +166,23 @@ const handleSubmit = async () => {
   }
 
   &__content {
+    align-items: center;
+    background-color: var(--clr-bg-2);
     border-radius: 0.3rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 2rem;
-    background-color: var(--clr-bg-2);
-    width: 100%;
     padding: 2rem;
+    width: 100%;
   }
 
   &__form {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 1rem;
-    width: 100%;
     max-width: 40rem;
+    width: 100%;
   }
 
   &__form-group {
@@ -198,12 +198,12 @@ const handleSubmit = async () => {
   }
 
   &__form-input {
-    padding: 0.5rem 1rem;
-    border: 1px solid var(--clr-text-1);
     border-radius: 0.3rem;
-    outline: none;
+    border: 1px solid var(--clr-text-1);
     font-size: 1.2rem;
     font-weight: 300;
+    outline: none;
+    padding: 0.5rem 1rem;
     transition: var(--transition-fast);
 
     &:focus {
@@ -216,15 +216,15 @@ const handleSubmit = async () => {
   }
 
   &__form-button {
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 0.2rem;
-    outline: none;
-    font-size: 1.2rem;
-    font-weight: 400;
     background-color: var(--clr-primary);
+    border-radius: 0.2rem;
+    border: none;
     color: var(--clr-text-0);
     cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 400;
+    outline: none;
+    padding: 0.5rem 1rem;
     transition: all 0.2s ease-in-out;
 
     &:hover {
@@ -233,24 +233,24 @@ const handleSubmit = async () => {
   }
 
   &__form-error {
+    color: var(--clr-text-1);
     font-size: 0.9rem;
     font-weight: 300;
-    color: var(--clr-text-1);
   }
 
   &__modal-content {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     height: 100%;
+    justify-content: center;
   }
 
   &__modal-title {
     color: var(--clr-text-1);
-    line-height: 1;
     font-size: 1.5rem;
     font-weight: 700;
+    line-height: 1;
     margin-bottom: 1rem;
   }
 
@@ -267,8 +267,8 @@ const handleSubmit = async () => {
   .about {
     padding: 2rem 0;
     &__header {
-      padding: 2rem;
       flex-direction: column;
+      padding: 2rem;
     }
 
     &__left-content {

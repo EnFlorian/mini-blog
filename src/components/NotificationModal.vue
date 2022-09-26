@@ -21,26 +21,25 @@ const props = defineProps<{
 <style scoped lang="scss">
 .notification-modal {
   background-color: rgba(0, 0, 0, 0.5);
-  width: 100vw;
   height: 100vh;
+  left: 0;
   position: fixed;
   top: 0;
-  left: 0;
+  width: 100vw;
 
   &__container {
     background-color: var(--clr-bg-2);
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     border-radius: 0.5rem;
-    padding: 1.5rem;
+    color: var(--clr-text-0);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     gap: 1rem;
-    color: var(--clr-text-0);
+    justify-content: space-between;
+    left: 50%;
+    padding: 1.5rem;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 
   &__footer {
@@ -50,12 +49,12 @@ const props = defineProps<{
 
   &__button {
     background-color: var(--clr-accent-1);
-    color: var(--clr-text-1);
-    border: none;
     border-radius: 0.2rem;
-    padding: 0.4rem 1.5rem;
-    font-size: 1.1rem;
+    border: none;
+    color: var(--clr-text-1);
     cursor: pointer;
+    font-size: 1.1rem;
+    padding: 0.4rem 1.5rem;
     transition: var(--transition-base);
 
     &:hover {
@@ -64,6 +63,7 @@ const props = defineProps<{
   }
 }
 
+// Media Queries
 @media screen and (max-width: 768px) {
   .notification-modal {
     &__container {

@@ -2,7 +2,7 @@
   <section class="about container-lg">
     <header class="about__header">
       <div class="about__left-content">
-        <img :src="aboutImage" alt="about" />
+        <img class="about__image" :src="aboutImage" alt="about" />
       </div>
       <div class="about__right-content">
         <h1 class="about__title">Who Am I?</h1>
@@ -25,17 +25,22 @@
       <form class="about__form">
         <div class="about__form-group">
           <label for="name" class="about__form-label">Name</label>
-          <input v-model="formData.name" type="text" id="name" class="about__form-input" />
+          <input v-model="formData.name" type="text" id="name" class="about__form-input" placeholder="Name..." />
           <p v-if="$v.name.$error" class="about__form-error">Please enter a Name.</p>
         </div>
         <div class="about__form-group">
           <label for="email" class="about__form-label">Email</label>
-          <input v-model="formData.email" type="email" id="email" class="about__form-input" />
+          <input v-model="formData.email" type="email" id="email" class="about__form-input" placeholder="Email..." />
           <p v-if="$v.email.$error" class="about__form-error">Please enter a valid Email Address.</p>
         </div>
         <div class="about__form-group">
           <label for="message" class="about__form-label">Message</label>
-          <textarea v-model="formData.message" id="message" class="about__form-input" rows="5"></textarea>
+          <textarea
+            v-model="formData.message"
+            id="message"
+            class="about__form-input about__form-text-area"
+            rows="5"
+          ></textarea>
           <p v-if="$v.message.$error" class="about__form-error">Please enter a Message.</p>
         </div>
         <button class="about__form-button" @click.prevent="handleSubmit">Send</button>
@@ -99,43 +104,64 @@ const handleSubmit = async () => {
     width: 100%;
     display: flex;
     align-items: center;
+    min-height: 20rem;
     gap: 2rem;
     margin-bottom: 2rem;
     background-color: var(--clr-bg-2);
+    overflow: hidden;
   }
 
   &__left-content {
-    width: 100%;
-    max-width: 500px;
-    height: 500px;
-    border-radius: 0.2rem;
-    overflow: hidden;
-    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+    flex: 1;
+    display: flex;
+  }
 
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+  &__image {
+    width: 100%;
+    object-fit: cover;
   }
 
   &__right-content {
-    flex: 1;
+    flex: 2;
     width: 100%;
-    max-width: 500px;
     display: flex;
     flex-direction: column;
     gap: 1rem;
   }
 
   &__title {
-    font-size: 2rem;
-    font-weight: 400;
+    width: fit-content;
+    line-height: 1;
+    position: relative;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--clr-text-1);
   }
 
   &__description {
     font-size: 1.2rem;
     font-weight: 300;
+    color: var(--clr-text-2);
+  }
+
+  &__socials {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__socials li {
+    font-size: 2.5rem;
+    a {
+      color: var(--clr-text-2);
+      transition: var(--transition-fast);
+
+      &:hover {
+        color: var(--clr-accent-1);
+      }
+    }
   }
 
   &__content {
@@ -173,10 +199,19 @@ const handleSubmit = async () => {
   &__form-input {
     padding: 0.5rem 1rem;
     border: 1px solid var(--clr-text-1);
-    border-radius: 0.2rem;
+    border-radius: 0.3rem;
     outline: none;
     font-size: 1.2rem;
     font-weight: 300;
+    transition: var(--transition-fast);
+
+    &:focus {
+      border-bottom: 4px solid var(--clr-accent-1);
+    }
+  }
+
+  &__form-text-area {
+    resize: vertical;
   }
 
   &__form-button {
@@ -194,6 +229,35 @@ const handleSubmit = async () => {
     &:hover {
       background-color: var(--clr-primary-1);
     }
+  }
+
+  &__form-error {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: var(--clr-text-1);
+  }
+
+  &__modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  &__modal-title {
+    color: var(--clr-text-1);
+    line-height: 1;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  &__modal-description {
+    color: var(--clr-text-2);
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
   }
 }
 </style>

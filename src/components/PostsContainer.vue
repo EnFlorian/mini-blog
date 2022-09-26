@@ -46,17 +46,50 @@ const addMorePosts = () => {
 
 <style scoped lang="scss">
 .posts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
   &__title {
+    width: fit-content;
+    position: relative;
     font-size: 2rem;
-    font-weight: 400;
-    margin-bottom: 2rem;
+    font-weight: 700;
     color: var(--clr-text-1);
+
+    &::before {
+      position: absolute;
+      bottom: -0.5rem;
+      left: 0;
+      content: "";
+      display: block;
+      width: 100%;
+      height: 0.3rem;
+      background-color: var(--clr-accent-1);
+      margin-top: 0.5rem;
+    }
   }
 
   &__posts {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+  }
+
+  &__pagination-button {
+    background-color: var(--clr-bg-2);
+    border: none;
+    border-radius: 0.2rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--clr-text-1);
+    cursor: pointer;
+    transition: var(--transition-fast);
+
+    &:hover {
+      transform: scale(1.02);
+    }
   }
 }
 

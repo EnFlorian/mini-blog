@@ -11,13 +11,12 @@
           placeholder="Enter your email address"
           v-model="formData.email"
         />
-        <p v-if="$v.email.error" class="newsletter-section__form-error">Please enter a valid Email Address.</p>
 
         <button class="newsletter-section__form-button" @click.prevent="handleSubmit">Subscribe</button>
       </form>
+      <p v-if="$v.email.$error" class="newsletter-section__form-error">Please enter a valid Email Address.</p>
     </div>
   </section>
-  <!-- Modal -->
   <NotificationModal :show="showModal" :closeModal="closeModal">
     <div class="newsletter-section__modal-content">
       <h1 class="newsletter-section__modal-title">Thank you for subscribing!</h1>
@@ -100,8 +99,18 @@ const closeModal = () => {
     font-size: 1rem;
     font-weight: 400;
     width: 100%;
-    color: var(--clr-text-2);
-    background-color: var(--clr-text-1);
+    color: var(--clr-bg-2);
+    background-color: var(--clr-bg-0);
+
+    &::placeholder {
+      color: var(--clr-text-2);
+    }
+  }
+
+  &__form-error {
+    color: var(--clr-bg-1);
+    font-size: 1rem;
+    font-weight: 400;
   }
 
   &__form-button {
@@ -117,7 +126,7 @@ const closeModal = () => {
     transition: var(--transition-base);
 
     &:hover {
-      background-color: var(--clr-bg-1);
+      transform: scale(1.02);
     }
   }
 
@@ -130,14 +139,18 @@ const closeModal = () => {
   }
 
   &__modal-title {
-    font-size: 2rem;
+    color: var(--clr-text-1);
+    line-height: 1;
+    font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
   }
 
   &__modal-description {
-    font-size: 1.5rem;
+    color: var(--clr-text-2);
+    font-size: 1.2rem;
     font-weight: 400;
+    margin-bottom: 1rem;
   }
 }
 </style>

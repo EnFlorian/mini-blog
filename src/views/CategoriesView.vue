@@ -39,9 +39,24 @@ const categories = posts.reduce((acc, post) => {
   align-items: center;
 
   &__title {
+    position: relative;
     font-size: 2rem;
-    font-weight: 400;
+    font-weight: 600;
     margin-bottom: 2rem;
+    color: var(--clr-text-1);
+    align-self: flex-start;
+
+    &::before {
+      position: absolute;
+      bottom: -0.5rem;
+      left: 0;
+      content: "";
+      display: block;
+      width: 100%;
+      height: 0.3rem;
+      background-color: var(--clr-accent-1);
+      margin-top: 0.5rem;
+    }
   }
 
   &__cards {
@@ -71,10 +86,12 @@ const categories = posts.reduce((acc, post) => {
   &__card-title {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
+    color: var(--clr-text-1);
   }
 
   &__card-description {
     font-size: 1.2rem;
+    color: var(--clr-text-2);
   }
 }
 </style>

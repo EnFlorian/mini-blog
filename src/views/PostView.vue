@@ -11,7 +11,7 @@
 
       <img class="post__image" :src="post.coverImage.src" :alt="post.coverImage.alt" />
     </header>
-    <div class="post__content" v-html="markdownToHtml" />
+    <div class="post__content markdown" v-html="markdownToHtml" />
     <footer class="post__footer">
       <router-link :to="`/categories/${post.category}`" class="post__category">{{
         post.category.toLowerCase()
@@ -44,4 +44,88 @@ const markdownToHtml = computed(() => {
 });
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.post {
+  padding: 5rem 0;
+  color: var(--clr-text-1);
+
+  &__header {
+    margin-bottom: 3rem;
+  }
+
+  &__title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  &__meta {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  &__author-avatar {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+  }
+
+  &__author {
+    font-size: 0.875rem;
+    font-weight: 700;
+    margin-right: 1rem;
+  }
+
+  &__date {
+    font-size: 0.875rem;
+    font-weight: 700;
+    margin-right: 1rem;
+  }
+
+  &__read-time {
+    font-size: 0.875rem;
+    font-weight: 700;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.8rem;
+    margin-bottom: 3rem;
+  }
+
+  &__content {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    margin-bottom: 3rem;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__category {
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--clr-accent-1);
+    background-color: var(--clr-accent-2);
+    padding: 0.5rem 1rem;
+    border-radius: 0.8rem;
+  }
+
+  &__socials {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__socials-item {
+    font-size: 1.5rem;
+  }
+}
+</style>

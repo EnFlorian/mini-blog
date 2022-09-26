@@ -68,7 +68,7 @@ window.onscroll = () => {
   &__logo {
     font-size: 2rem;
     font-weight: 700;
-    color: var(--clr-text-0);
+    color: var(--clr-text-1);
   }
 
   &__links {

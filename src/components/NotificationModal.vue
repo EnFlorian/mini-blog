@@ -50,16 +50,16 @@ const props = defineProps<{
 
   &__button {
     background-color: var(--clr-accent-1);
-    color: var(--clr-text-0);
+    color: var(--clr-text-1);
     border: none;
     border-radius: 0.2rem;
-    padding: 0.4rem 1rem;
-    font-size: 1.5rem;
+    padding: 0.4rem 1.5rem;
+    font-size: 1.1rem;
     cursor: pointer;
     transition: var(--transition-base);
 
     &:hover {
-      background-color: var(--clr-accent-1);
+      transform: scale(1.02);
     }
   }
 }

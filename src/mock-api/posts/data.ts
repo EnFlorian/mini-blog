@@ -7,14 +7,65 @@ import postImage5 from "../../assets/images/posts/5.jpg";
 import postImage6 from "../../assets/images/posts/6.jpg";
 import postImage7 from "../../assets/images/posts/7.jpg";
 
+const markdown = `
+# h1 Heading
+## h2 Heading
+### h3 Heading
+#### h4 Heading
+##### h5 Heading
+###### h6 Heading
+### Horizontal Rule
+***
+## Typographic replacements
+## Emphasis
+**This is bold text**
+__This is bold text__
+*This is italic text*
+_This is italic text_
+~~Strikethrough~~
+## Blockquotes
+> Blockquotes can also be nested...
+>> ...by using additional greater-than signs right next to each other...
+> > > ...or with spaces between arrows.
+## Lists
+Unordered
++ Create a list by starting a line with 
++ Create a list by starting a line with 
++ Create a list by starting a line with 
++ Create a list by starting a line with 
+## Code
+Indented code
+    // Some comments
+    line 1 of code
+    line 2 of code
+    line 3 of code
+## Tables
+| Option | Description |
+| ------ | ----------- |
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default. |
+| ext    | extension to be used for dest files. |
+Right aligned columns
+| Option | Description |
+| ------:| -----------:|
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default. |
+| ext    | extension to be used for dest files. |
+## Links
+[link text](http://dev.nodeca.com)
+[link with title](http://nodeca.github.io/pica/demo/ "title text!")
+Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
+## Images
+![Minion](https://octodex.github.com/images/minion.png)
+`;
+
 export const posts = [
   {
     id: "0",
     featured: true,
     title: "How to use React Query",
     excerpt: "React Query is a library that helps you fetch, cache and update data in your React applications.",
-    content:
-      "React Query is a library that helps you fetch, cache and update data in your React applications. It will automatically keep your UI in sync with the latest data and reduce the amount of boilerplate in your application.",
+    content: markdown,
     category: "Programming",
     author: {
       name: "Akira Bauer",

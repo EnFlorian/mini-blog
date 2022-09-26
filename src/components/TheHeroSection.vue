@@ -2,16 +2,13 @@
   <section class="hero-section">
     <div class="hero-section__wrapper container-lg">
       <div class="hero-section__left-content">
-        <h1 class="hero-section__title">Hey, I'm Akira</h1>
-        <p class="hero-section__description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptates, quod, quia, voluptate quae
-          voluptatem quibusdam necessitatibus quidem voluptatum quos nesciunt.
-        </p>
-        <!-- horizontal subscribe form and submit button -->
-        <form class="hero-section__subscribe-form">
-          <input class="hero-section__subscribe-form-input" type="email" placeholder="Enter your email address" />
-          <button class="hero-section__subscribe-form-button">Subscribe</button>
-        </form>
+        <h1 class="hero-section__title">Hi, I'm <span class="accent">Akira Bauer</span>,</h1>
+
+        <p class="hero-section__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="hero-section__buttons">
+          <!-- <routerLink to="/categories" class="hero-section__button">Read More</routerLink> -->
+          <routerLink to="/about" class="hero-section__button">Contact Me</routerLink>
+        </div>
       </div>
       <div class="hero-section__right-content">
         <div class="hero-section__image-wrapper">
@@ -21,8 +18,6 @@
     </div>
   </section>
 </template>
-
-<script setup lang="ts"></script>
 
 <style scoped lang="scss">
 .hero-section {
@@ -43,37 +38,35 @@
   &__title {
     font-size: 3.5rem;
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    color: var(--clr-text-1);
   }
 
   &__description {
     font-size: 1.5rem;
     line-height: 1.5;
+    color: var(--clr-text-2);
   }
 
-  &__subscribe-form {
+  &__buttons {
     display: flex;
-    align-items: center;
     gap: 1rem;
     margin-top: 2rem;
   }
 
-  &__subscribe-form-input {
-    border: 1px solid var(--clr-accent-1);
-    background-color: var(--clr-bg-2);
-    border-radius: 0.5rem;
-    padding: 1rem;
-    width: 100%;
-  }
-
-  &__subscribe-form-button {
+  &__button {
     background-color: var(--clr-accent-1);
     border: none;
-    border-radius: 0.5rem;
+    border-radius: 10rem;
     color: var(--clr-text-1);
     cursor: pointer;
     font-size: 1.2rem;
     padding: 1rem 2rem;
+    transition: var(--transition-fast);
+
+    &:hover {
+      transform: scale(1.02);
+    }
   }
 
   &__right-content {

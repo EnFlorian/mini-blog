@@ -2,9 +2,9 @@
   <section class="hero-section">
     <div class="hero-section__wrapper container-lg">
       <div class="hero-section__left-content">
-        <h1 class="hero-section__title">Hi, I'm <span class="accent">Akira Bauer</span>,</h1>
+        <h1 class="hero-section__title">Hi, I'm <span class="accent">Akira Bauer</span></h1>
 
-        <p class="hero-section__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p class="hero-section__description">Software Developer based in Linz</p>
         <div class="hero-section__buttons">
           <!-- <routerLink to="/categories" class="hero-section__button">Read More</routerLink> -->
           <routerLink to="/about" class="hero-section__button">Contact Me</routerLink>
@@ -41,12 +41,13 @@
     font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
+    line-height: 1;
     color: var(--clr-text-1);
   }
 
   &__description {
-    font-size: 1.5rem;
-    line-height: 1.5;
+    font-size: 1.9rem;
+    line-height: 1.2;
     color: var(--clr-text-2);
   }
 

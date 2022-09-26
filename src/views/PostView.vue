@@ -46,27 +46,27 @@ const markdownToHtml = computed(() => {
 
 <style scoped lang="scss">
 .post {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
   background-color: var(--clr-bg-2);
-  padding: 1rem;
   border-radius: 0.5rem;
-  color: var(--clr-text-1);
   box-shadow: var(--box-shadow-1);
+  color: var(--clr-text-1);
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+  padding: 1rem;
 
   &__header {
     margin-bottom: 3rem;
   }
 
   &__title {
-    font-size: 3rem;
+    font-size: 2.7rem;
     font-weight: 700;
     margin-bottom: 1rem;
   }
 
   &__meta {
-    display: flex;
     align-items: center;
+    display: flex;
     margin-bottom: 1rem;
   }
 

@@ -6,7 +6,7 @@
     <div class="post-card__right-content">
       <div class="post-card__main-content">
         <router-link :to="`/posts/${post.id}`" class="post-card__title">{{ post.title }}</router-link>
-        <p class="post-card__description">{{ shortenText(post.excerpt, 300) }}</p>
+        <p class="post-card__description">{{ shortenText(post.excerpt, 250) }}</p>
       </div>
       <div class="post-card__meta">
         <img class="post-card__author-avatar" :src="post.author.image" alt="author" />
@@ -58,7 +58,7 @@ const props = defineProps<{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 0.5rem;
   }
 
   &__main-content {
@@ -68,7 +68,7 @@ const props = defineProps<{
   }
 
   &__title {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 400;
     color: var(--clr-text-1);
   }

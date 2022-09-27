@@ -32,7 +32,6 @@ const isMobileMenuOpen = ref(false);
 
 const toggleMobileMenu = () => {
   isMobileMenuOpen.value = !isMobileMenuOpen.value;
-  console.log(isMobileMenuOpen.value);
 };
 
 window.onscroll = () => {

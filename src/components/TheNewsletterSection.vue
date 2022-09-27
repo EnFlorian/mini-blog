@@ -2,8 +2,10 @@
   <section class="newsletter-section container-lg">
     <div class="newsletter-section__wrapper">
       <fa :icon="['fas', 'envelope']" class="newsletter-section__icon" />
-      <h2 class="newsletter-section__title">Subscribe to our Newsletter</h2>
-      <p class="newsletter-section__description">Subscribe to our newsletter to get the latest news and updates.</p>
+      <div class="newsletter-section__details">
+        <h2 class="newsletter-section__title">Subscribe to our Newsletter</h2>
+        <p class="newsletter-section__description">Subscribe to our newsletter to get the latest news and updates.</p>
+      </div>
       <form class="newsletter-section__form">
         <input
           class="newsletter-section__form-input"
@@ -70,7 +72,13 @@ const closeModal = () => {
   }
 
   &__icon {
-    font-size: 3rem;
+    font-size: 4rem;
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
 
   &__title {

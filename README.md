@@ -1,4 +1,4 @@
-# 💻 Mini Blog
+# 📙 Mini Blog
 
 ##### Mini Blog is a minimal personal blog that lets you post content and stay in touch with people
 

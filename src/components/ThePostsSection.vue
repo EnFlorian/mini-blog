@@ -1,8 +1,6 @@
 <template>
   <section class="posts-section container-md">
-    <!-- recent post without more functionality -->
     <PostsContainerVue :posts="featuredPosts" :title="'Featured posts'" />
-    <!-- remaining posts  -->
     <PostsContainerVue :posts="remainingPosts" :title="'Latest Posts'" :pagination="true" />
   </section>
 </template>

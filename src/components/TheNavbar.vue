@@ -16,7 +16,6 @@
         <fa :icon="['fas', 'bars']" />
       </button>
     </div>
-    <!-- Mobile Modal -->
     <Transition appear name="fade">
       <TheMobileMenuVue v-if="isMobileMenuOpen" :closeMenu="toggleMobileMenu" />
     </Transition>
@@ -48,46 +47,45 @@ window.onscroll = () => {
 
 <style scoped lang="scss">
 .navbar {
-  height: var(--navbar-height);
+  align-items: center;
+  background-color: var(--clr-bg-1);
   display: flex;
   flex-direction: column;
-  align-items: center;
-
-  background-color: var(--clr-bg-1);
+  height: var(--navbar-height);
   position: sticky;
   top: 0;
   transition: var(--transition-base);
   z-index: 100;
 
   &--scrolled {
-    box-shadow: var(--box-shadow-1);
     background-color: var(--clr-bg-2);
+    box-shadow: var(--box-shadow-1);
   }
 
   &__wrapper {
-    height: 100%;
     align-items: center;
     color: var(--clr-text-1);
     display: flex;
+    height: 100%;
     justify-content: space-between;
   }
 
   &__logo {
+    color: var(--clr-text-1);
     font-size: 2rem;
     font-weight: 700;
-    color: var(--clr-text-1);
   }
 
   &__links {
-    display: flex;
     align-items: center;
+    display: flex;
     gap: 1.5rem;
   }
 
   &__link {
+    color: var(--clr-text-1);
     font-size: 1.2rem;
     font-weight: 400;
-    color: var(--clr-text-1);
     transition: var(--transition-base);
 
     &:hover {
@@ -96,12 +94,12 @@ window.onscroll = () => {
   }
 
   &__mobile-menu-button {
-    display: none;
     background-color: transparent;
     border: none;
     color: var(--clr-text-1);
-    font-size: 1.5rem;
     cursor: pointer;
+    display: none;
+    font-size: 1.5rem;
     transition: var(--transition-base);
 
     &:hover {
@@ -127,6 +125,7 @@ window.onscroll = () => {
   transition: transform 1.5s ease;
 }
 
+// Media Queries
 @media screen and (max-width: 768px) {
   .navbar {
     &__links {

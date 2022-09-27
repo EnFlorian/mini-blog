@@ -24,11 +24,11 @@
   background-color: var(--clr-bg-2);
 
   &__wrapper {
-    display: flex;
     align-items: center;
+    color: var(--clr-text-1);
+    display: flex;
     justify-content: space-between;
     padding: 5rem 0 5rem 0;
-    color: var(--clr-text-1);
   }
 
   &__left-content {
@@ -38,17 +38,17 @@
   }
 
   &__title {
+    color: var(--clr-text-1);
     font-size: 3.5rem;
     font-weight: 700;
-    margin-bottom: 0.5rem;
     line-height: 1;
-    color: var(--clr-text-1);
+    margin-bottom: 0.5rem;
   }
 
   &__description {
+    color: var(--clr-text-2);
     font-size: 1.9rem;
     line-height: 1.2;
-    color: var(--clr-text-2);
   }
 
   &__buttons {
@@ -59,8 +59,8 @@
 
   &__button {
     background-color: var(--clr-accent-1);
-    border: none;
     border-radius: 10rem;
+    border: none;
     color: var(--clr-text-1);
     cursor: pointer;
     font-size: 1.2rem;
@@ -73,28 +73,27 @@
   }
 
   &__right-content {
-    flex: 1;
-    display: flex;
     align-items: center;
+    display: flex;
+    flex: 1;
     justify-content: flex-end;
   }
 
   &__image-wrapper {
     border-radius: 50%;
     height: 25rem;
-    width: 25rem;
     position: relative;
-    // overflow: hidden;
+    width: 25rem;
 
     &::before {
       background-color: var(--clr-accent-1);
       border-radius: 50%;
       content: "";
       height: 105%;
-      width: 105%;
       left: 0;
       position: absolute;
       top: 0;
+      width: 105%;
       width: 105%;
       z-index: 1;
     }
@@ -109,21 +108,22 @@
   }
 }
 
+// Media Queries
 @media screen and (max-width: 860px) {
   .hero-section {
     overflow: hidden;
 
     &__wrapper {
       flex-direction: column;
-      padding: 3rem 0;
       gap: 3rem;
+      padding: 3rem 0;
     }
 
     &__left-content {
-      order: 1;
-      margin-bottom: 2rem;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
+      margin-bottom: 2rem;
+      order: 1;
       text-align: center;
     }
 

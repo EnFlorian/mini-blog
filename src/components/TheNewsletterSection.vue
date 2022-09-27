@@ -11,7 +11,6 @@
           placeholder="Enter your email address"
           v-model="formData.email"
         />
-
         <button class="newsletter-section__form-button" @click.prevent="handleSubmit">Subscribe</button>
       </form>
       <p v-if="$v.email.$error" class="newsletter-section__form-error">Please enter a valid Email Address.</p>
@@ -57,17 +56,17 @@ const closeModal = () => {
 
 <style scoped lang="scss">
 .newsletter-section {
-  min-height: 50vh;
   background-color: var(--clr-accent-1);
   border-radius: 0.8rem;
+  min-height: 50vh;
 
   &__wrapper {
+    align-items: center;
+    color: var(--clr-text-0);
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 1rem;
     padding: 5rem 1rem;
-    color: var(--clr-text-0);
   }
 
   &__icon {
@@ -87,20 +86,20 @@ const closeModal = () => {
   &__form {
     display: flex;
     gap: 0.5rem;
-    width: 100%;
     max-width: 50rem;
+    width: 100%;
   }
 
   &__form-input {
-    padding: 1rem;
-    border: none;
+    background-color: var(--clr-bg-0);
     border-radius: 0.5rem;
-    outline: none;
+    border: none;
+    color: var(--clr-bg-2);
     font-size: 1rem;
     font-weight: 400;
+    outline: none;
+    padding: 1rem;
     width: 100%;
-    color: var(--clr-bg-2);
-    background-color: var(--clr-bg-0);
 
     &::placeholder {
       color: var(--clr-text-2);
@@ -114,15 +113,15 @@ const closeModal = () => {
   }
 
   &__form-button {
-    padding: 1rem;
-    border: none;
+    background-color: var(--clr-bg-2);
     border-radius: 0.5rem;
-    outline: none;
+    border: none;
+    color: var(--clr-text-0);
+    cursor: pointer;
     font-size: 1rem;
     font-weight: 600;
-    color: var(--clr-text-0);
-    background-color: var(--clr-bg-2);
-    cursor: pointer;
+    outline: none;
+    padding: 1rem;
     transition: var(--transition-base);
 
     &:hover {
@@ -131,18 +130,18 @@ const closeModal = () => {
   }
 
   &__modal-content {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     height: 100%;
+    justify-content: center;
   }
 
   &__modal-title {
     color: var(--clr-text-1);
-    line-height: 1;
     font-size: 1.5rem;
     font-weight: 700;
+    line-height: 1;
     margin-bottom: 1rem;
   }
 
@@ -154,6 +153,7 @@ const closeModal = () => {
   }
 }
 
+// Media Queries
 @media screen and (max-width: 768px) {
   .newsletter-section {
     &__wrapper {
@@ -201,14 +201,14 @@ const closeModal = () => {
     }
 
     &__form {
-      flex-direction: column;
       align-items: center;
+      flex-direction: column;
       justify-content: center;
     }
 
     &__form-input {
-      width: 100%;
       margin-bottom: 0.5rem;
+      width: 100%;
     }
 
     &__form-button {

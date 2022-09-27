@@ -32,48 +32,48 @@ const categories = posts.reduce((acc, post) => {
 
 <style scoped lang="scss">
 .categories {
-  padding: 5rem 0;
+  align-items: center;
   color: var(--clr-text-0);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding: 5rem 0;
 
   &__title {
-    position: relative;
+    align-self: flex-start;
+    color: var(--clr-text-1);
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 2rem;
-    color: var(--clr-text-1);
-    align-self: flex-start;
+    position: relative;
 
     &::before {
-      position: absolute;
+      background-color: var(--clr-accent-1);
       bottom: -0.5rem;
-      left: 0;
       content: "";
       display: block;
-      width: 100%;
       height: 0.3rem;
-      background-color: var(--clr-accent-1);
+      left: 0;
       margin-top: 0.5rem;
+      position: absolute;
+      width: 100%;
     }
   }
 
   &__cards {
     display: grid;
-    width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     flex-wrap: wrap;
     gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: 100%;
   }
 
   &__card {
-    display: flex;
     background-color: var(--clr-bg-2);
     border-radius: 0.2rem;
-    width: 100%;
     cursor: pointer;
+    display: flex;
     transition: var(--transition-base);
+    width: 100%;
 
     &:hover {
       transform: scale(1.02);
@@ -81,25 +81,26 @@ const categories = posts.reduce((acc, post) => {
   }
 
   &__card-link {
-    width: 100%;
-    padding: 1rem;
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: space-between;
+    padding: 1rem;
+    width: 100%;
   }
 
   &__card-title {
+    color: var(--clr-text-1);
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
-    color: var(--clr-text-1);
   }
 
   &__card-description {
-    font-size: 1.2rem;
     color: var(--clr-text-2);
+    font-size: 1.2rem;
   }
 }
 
+// Media Queries
 @media screen and (max-width: 768px) {
   .categories {
     padding: 2rem 0;

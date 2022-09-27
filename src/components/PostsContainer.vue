@@ -51,22 +51,22 @@ const addMorePosts = () => {
   gap: 1.5rem;
 
   &__title {
-    width: fit-content;
-    position: relative;
+    color: var(--clr-text-1);
     font-size: 2rem;
     font-weight: 700;
-    color: var(--clr-text-1);
+    position: relative;
+    width: fit-content;
 
     &::before {
-      position: absolute;
+      background-color: var(--clr-accent-1);
       bottom: -0.5rem;
-      left: 0;
       content: "";
       display: block;
-      width: 100%;
       height: 0.3rem;
-      background-color: var(--clr-accent-1);
+      left: 0;
       margin-top: 0.5rem;
+      position: absolute;
+      width: 100%;
     }
   }
 
@@ -78,18 +78,18 @@ const addMorePosts = () => {
 
   &__pagination-button {
     background-color: var(--clr-bg-2);
-    border: none;
     border-radius: 0.3rem;
-    padding: 0.5rem 1rem;
-    font-size: 1.5rem;
-    font-weight: 400;
+    border: none;
     color: var(--clr-text-1);
     cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 0.5rem 1rem;
     transition: var(--transition-fast);
 
     &:hover {
-      transform: scaleY(1.05);
       color: var(--clr-accent-1);
+      transform: scaleY(1.05);
     }
   }
 }

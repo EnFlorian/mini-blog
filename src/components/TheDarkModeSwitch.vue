@@ -23,12 +23,12 @@ const toggleDarkMode = () => {
 
 <style scoped lang="scss">
 .dark-mode-switch {
-  display: flex;
   align-items: center;
-  justify-content: center;
-  width: 1.5rem;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
   transition: var(--transition-base);
+  width: 1.5rem;
 
   &:hover {
     color: var(--clr-accent-1);

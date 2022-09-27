@@ -17,7 +17,7 @@
         post.category.toLowerCase()
       }}</router-link>
       <ul class="post__socials">
-        <li v-for="(social, index) in socials" :key="index">
+        <li class="post__social-icon" v-for="(social, index) in socials" :key="index">
           <a :href="social.path" target="_blank" rel="noopener noreferrer">
             <fa :icon="social.icon" />
           </a>
@@ -115,22 +115,27 @@ const markdownToHtml = computed(() => {
   }
 
   &__category {
-    font-size: 0.875rem;
-    font-weight: 700;
+    font-size: 1rem;
+    font-weight: 500;
     text-transform: uppercase;
-    color: var(--clr-accent-1);
-    background-color: var(--clr-accent-2);
+    color: var(--clr-text-1);
     padding: 0.5rem 1rem;
     border-radius: 0.8rem;
+    background-color: var(--clr-accent-1);
+    transition: var(--transition-fast);
+
+    &:hover {
+      transform: scale(1.02);
+    }
   }
 
   &__socials {
     display: flex;
-    gap: 1rem;
+    gap: 0.5rem;
   }
 
-  &__socials-item {
-    font-size: 1.5rem;
+  &__social-icon {
+    font-size: 2rem;
   }
 }
 
@@ -179,6 +184,19 @@ const markdownToHtml = computed(() => {
 
     &__image {
       margin-bottom: 2rem;
+    }
+
+    &__socials {
+      gap: 0.25rem;
+    }
+
+    &__social-icon {
+      font-size: 1.5rem;
+    }
+
+    &__category {
+      font-size: 0.75rem;
+      padding: 0.25rem 0.5rem;
     }
   }
 }

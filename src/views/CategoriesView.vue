@@ -90,13 +90,12 @@ const categories = posts.reduce((acc, post) => {
 
   &__card-title {
     color: var(--clr-text-1);
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
   }
 
   &__card-description {
     color: var(--clr-text-2);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 

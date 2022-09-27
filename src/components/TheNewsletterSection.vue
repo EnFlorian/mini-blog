@@ -96,6 +96,7 @@ const closeModal = () => {
     gap: 0.5rem;
     max-width: 50rem;
     width: 100%;
+    margin-top: 1rem;
   }
 
   &__form-input {

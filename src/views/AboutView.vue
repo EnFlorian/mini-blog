@@ -86,6 +86,11 @@ const $v = useVuelidate(rules, formData);
 const handleSubmit = async () => {
   const result = await $v.value.$validate();
   if (result) {
+    formData.email = "";
+    formData.message = "";
+    formData.name = "";
+
+    $v.value.$reset();
     toggleModal();
   }
 };

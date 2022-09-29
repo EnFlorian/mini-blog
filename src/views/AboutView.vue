@@ -221,7 +221,8 @@ const handleSubmit = async () => {
   }
 
   &__form-button {
-    background-color: var(--clr-primary);
+    background-color: var(--clr-accent-1);
+    min-width: 40%;
     border-radius: 0.2rem;
     border: none;
     color: var(--clr-text-0);
@@ -230,10 +231,10 @@ const handleSubmit = async () => {
     font-weight: 400;
     outline: none;
     padding: 0.5rem 1rem;
-    transition: all 0.2s ease-in-out;
+    transition: var(--transition-fast);
 
     &:hover {
-      background-color: var(--clr-primary-1);
+      transform: scale(1.02);
     }
   }
 
@@ -318,6 +319,10 @@ const handleSubmit = async () => {
 
     &__content {
       padding: 1rem;
+    }
+
+    &__form-button {
+      min-width: 100%;
     }
 
     &__modal-title {

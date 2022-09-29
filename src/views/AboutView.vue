@@ -71,7 +71,7 @@ const toggleModal = () => {
 
 const formData = reactive({
   email: "demo.user@email.com",
-  message: "",
+  message: "Hello World! Hello Friends!",
   name: "Demo User",
 });
 

@@ -46,7 +46,7 @@ yarn run start
 | Vite                    |   Build tool as replacement for vue cli    |
 | Vue.js                   |   Frontend Library                              |
 | SCSS                    |   CSS preprocessor                              |
-| pinia              |   Global state management, posts  |
+| Pinia              |   Global state management, posts  |
 
 
 #### Implementation
